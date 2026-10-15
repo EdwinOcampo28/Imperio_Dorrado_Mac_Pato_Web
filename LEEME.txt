@@ -1,0 +1,40 @@
+GESTOR DE GASTOS WEB — EDWIN OCAMPO — VERSIÓN 3.8
+
+INICIO
+1. Descomprime el ZIP.
+2. Abre index.html con doble clic.
+
+DISEÑO
+Tema Moka equilibrado: fondo cálido medio, superficies crema tostado, textos marrón oscuro y navegación café profundo. Evita el negro puro y mantiene contraste legible.
+
+FUNCIONES
+- Dashboard con gastos, ingresos, saldo mensual, variación frente al mes anterior y actividad reciente.
+- Registro de gastos e ingresos, edición, eliminación, búsqueda y filtros por tipo, categoría y fecha. Al registrar ingresos, el campo de categoría se oculta porque no es necesario.
+- Exportación de movimientos a CSV.
+- Reportes diarios, semanales y mensuales.
+- Presupuesto mensual y límites por categoría.
+- Metas de ahorro con aportes registrados y progreso.
+- Alertas y límites diarios, semanales y por categoría.
+- Cierre mensual con comparación de presupuesto y gasto real y archivo de resúmenes históricos.
+- Mi perfil con cambio de contraseña, descarga/restauración de respaldos y eliminación de datos protegida por respaldo y doble confirmación.
+- Gastos recurrentes: programa arriendo, servicios y suscripciones por frecuencia semanal, mensual o anual; muestra los vencimientos pendientes y permite registrar el gasto cuando corresponda. La aplicación actualiza la próxima fecha al registrarlo; no genera cargos automáticamente.
+- Protección reforzada de respaldos: valida el formato JSON, revisa campos clave y movimientos antes de restaurar y solicita descargar una copia preventiva antes de reemplazar la información.
+- Centro de notificaciones con historial de movimientos y cambios importantes, estado leído/no leído, contador de pendientes, opción de marcar todo como leído y eliminar notificaciones leídas o individuales.
+- Las notificaciones se conservan en el almacenamiento de la aplicación y se incluyen en los respaldos JSON.
+
+CENTRO DE NOTIFICACIONES
+Registra eventos como creación, edición y eliminación de movimientos, aportes y metas de ahorro, actualización de presupuestos y límites, cierres mensuales, respaldos, restauraciones y borrado de datos. El menú muestra cuántas notificaciones siguen pendientes de lectura.
+
+RESPALDOS Y DATOS
+- Descarga respaldos periódicos desde Mi perfil.
+- Antes de restaurar, se valida la estructura y los datos del archivo; se descarga un respaldo preventivo y se solicita confirmación antes de reemplazar los datos financieros incluidos.
+- Antes de eliminar datos financieros, solicita descargar una copia y luego pide una segunda confirmación. La cuenta y contraseña se conservan.
+- Se mantiene la clave de almacenamiento usada por versiones anteriores; los movimientos previos no se borran al actualizar el código.
+- La contraseña funciona como bloqueo de acceso cotidiano; no cifra los datos guardados por el navegador. Guarda los respaldos en un lugar seguro.
+
+ARCHIVOS
+- index.html
+- static/styles.css
+- static/app.js
+- respaldo_inicial_gastos.json
+Mantén los archivos juntos dentro de la carpeta del proyecto.
