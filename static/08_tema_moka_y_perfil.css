@@ -1,0 +1,328 @@
+/* v3.7 — tema Moka equilibrado: cálido, sin negros puros y con contraste de texto */
+body[data-theme="moka"] {
+    --bg:#d8d0c2;
+    --surface:#f2eadf;
+    --surface2:#e6dccd;
+    --ink:#30251e;
+    --muted:#625044;
+    --line:#c7b7a3;
+    --coffee:#503526;
+    --coffee2:#76513a;
+    --copper:#9a633b;
+    --tan:#d6b997;
+    --olive:#66734e;
+    --rose:#96594b;
+    --gold:#9b793e;
+    --shadow:0 5px 16px rgba(56,37,24,.09);
+    background:var(--bg);
+    color:var(--ink)
+}
+body[data-theme="moka"] .topbar {
+    background:#eee5d8;
+    border-bottom-color:#c5b39e
+}
+body[data-theme="moka"] .breadcrumb,
+body[data-theme="moka"] .today-label {
+    color:#675342
+}
+body[data-theme="moka"] .breadcrumb b,
+body[data-theme="moka"] .page-heading h1 {
+    color:#30251e
+}
+body[data-theme="moka"] .page-heading p,
+body[data-theme="moka"] .panel-heading p,
+body[data-theme="moka"] .table-title p,
+body[data-theme="moka"] .settings-heading p,
+body[data-theme="moka"] .stat-card>small {
+    color:#675647
+}
+body[data-theme="moka"] .stat-card,
+body[data-theme="moka"] .panel {
+    background:#f2eadf;
+    border-color:#c7b7a3;
+    box-shadow:0 5px 15px rgba(56,37,24,.07)
+}
+body[data-theme="moka"] .btn-outline {
+    background:#e5d8c7;
+    border-color:#bba58c;
+    color:#493123
+}
+body[data-theme="moka"] .btn-outline:hover {
+    background:#d9c6af
+}
+body[data-theme="moka"] .btn-soft {
+    background:#ded0bd;
+    border-color:#c5b199;
+    color:#493123
+}
+body[data-theme="moka"] input,
+body[data-theme="moka"] select,
+body[data-theme="moka"] textarea {
+    background:#fff9f0!important;
+    color:#30251e!important;
+    border-color:#b9a58e!important
+}
+body[data-theme="moka"] input::placeholder,
+body[data-theme="moka"] textarea::placeholder {
+    color:#766454!important;
+    opacity:1
+}
+body[data-theme="moka"] th {
+    color:#65513f;
+    border-bottom-color:#cdbda9
+}
+body[data-theme="moka"] td {
+    color:#3d3026;
+    border-bottom-color:#ded2c2
+}
+body[data-theme="moka"] .muted-small,
+body[data-theme="moka"] .empty-state,
+body[data-theme="moka"] .category-name,
+body[data-theme="moka"] .stat-top {
+    color:#665343
+}
+body[data-theme="moka"] .category-track,
+body[data-theme="moka"] .compare-track {
+    background:#d9ccbb
+}
+body[data-theme="moka"] .profile-layout {
+    grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+    gap:14px;
+    align-items:stretch
+}
+body[data-theme="moka"] .profile-tools-card {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,.9fr);
+    align-content:start;
+    align-self:start;
+    padding:0;
+    gap:0;
+    overflow:hidden;
+    border-radius:14px;
+    background:#eee3d4;
+    border:1px solid #bca58c;
+    box-shadow:0 4px 12px rgba(56,37,24,.07)
+}
+body[data-theme="moka"] .profile-tool-section {
+    padding:15px;
+    min-width:0
+}
+body[data-theme="moka"] .profile-tool-section+.profile-tool-section {
+    border-top:0;
+    border-left:1px solid #c7b39b
+}
+body[data-theme="moka"] .profile-tools-card .settings-heading {
+    align-items:flex-start;
+    gap:9px;
+    margin-bottom:12px
+}
+body[data-theme="moka"] .profile-tools-card .settings-heading h2 {
+    font-size:12px;
+    color:#35271e
+}
+body[data-theme="moka"] .profile-tools-card .settings-heading p {
+    font-size:10px;
+    line-height:1.45;
+    color:#665140
+}
+body[data-theme="moka"] .profile-tools-card .backup-actions {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+    margin-top:10px
+}
+body[data-theme="moka"] .profile-tools-card .backup-actions .btn {
+    width:100%;
+    min-height:36px;
+    padding:8px 9px;
+    font-size:10px;
+    white-space:normal;
+    line-height:1.3
+}
+body[data-theme="moka"] .profile-tools-card .muted-small {
+    font-size:10px;
+    line-height:1.45;
+    color:#65503e;
+    margin:10px 0 0
+}
+body[data-theme="moka"] .profile-danger-card {
+    background:#e5d4c5;
+    border:0;
+    border-left:1px solid #c7b39b;
+    border-radius:0;
+    padding:15px
+}
+body[data-theme="moka"] .profile-danger-card .settings-heading h2 {
+    color:#713c30
+}
+body[data-theme="moka"] .profile-danger-card .settings-heading p {
+    color:#60483b;
+    line-height:1.45
+}
+body[data-theme="moka"] .profile-danger-card .danger-icon {
+    background:#d4b1a1;
+    color:#713c30
+}
+body[data-theme="moka"] .profile-danger-card .btn-danger {
+    background:#8b493b;
+    border-color:#74392e;
+    color:#fff7ef
+}
+body[data-theme="moka"] .profile-danger-card .btn-danger:hover {
+    background:#74392e
+}
+body[data-theme="moka"] .profile-combined {
+    background:#f2eadf
+}
+body[data-theme="moka"] .profile-security {
+    border-color:#c7b7a3
+}
+body[data-theme="moka"] .notification-page-actions {
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap
+}
+body[data-theme="moka"] .notifications-panel {
+    padding:0;
+    overflow:hidden
+}
+body[data-theme="moka"] .notifications-toolbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    padding:17px 20px;
+    border-bottom:1px solid #c7b7a3;
+    background:#e9dece
+}
+body[data-theme="moka"] .notifications-toolbar h2 {
+    font-size:13px;
+    margin:0;
+    color:#30251e
+}
+body[data-theme="moka"] .notifications-toolbar p {
+    font-size:10px;
+    color:#665343;
+    margin:4px 0 0
+}
+body[data-theme="moka"] .notifications-list {
+    display:grid
+}
+body[data-theme="moka"] .notification-item {
+    display:flex;
+    gap:12px;
+    padding:15px 20px;
+    border-bottom:1px solid #ded1bf;
+    align-items:flex-start
+}
+body[data-theme="moka"] .notification-item:last-child {
+    border-bottom:0
+}
+body[data-theme="moka"] .notification-item.is-unread {
+    background:#fff8ec
+}
+body[data-theme="moka"] .notification-item.is-read {
+    background:#eee5d8
+}
+body[data-theme="moka"] .notification-symbol {
+    flex:0 0 32px;
+    height:32px;
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    background:#ded0bd;
+    color:#493123;
+    font-weight:800
+}
+body[data-theme="moka"] .notification-symbol.success {
+    background:#dce3cf;
+    color:#42552f
+}
+body[data-theme="moka"] .notification-symbol.warning {
+    background:#ecd5cb;
+    color:#7b3e31
+}
+body[data-theme="moka"] .notification-copy {
+    min-width:0;
+    flex:1
+}
+body[data-theme="moka"] .notification-title-row {
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:12px
+}
+body[data-theme="moka"] .notification-title-row h3 {
+    margin:0;
+    font-size:12px;
+    color:#30251e
+}
+body[data-theme="moka"] .notification-title-row time {
+    font-size:9px;
+    color:#6b5746;
+    white-space:nowrap
+}
+body[data-theme="moka"] .notification-copy p {
+    font-size:11px;
+    color:#574536;
+    line-height:1.5;
+    margin:5px 0 8px
+}
+body[data-theme="moka"] .notification-actions {
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap
+}
+body[data-theme="moka"] .notification-actions .text-btn {
+    color:#67452e;
+    padding:0
+}
+body[data-theme="moka"] .notification-actions .notification-delete {
+    color:#8b493b
+}
+body[data-theme="moka"] .notifications-empty {
+    text-align:center;
+    padding:42px 20px;
+    color:#5f4b3b
+}
+body[data-theme="moka"] .notifications-empty>span {
+    display:grid;
+    place-items:center;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#dce3cf;
+    color:#42552f;
+    font-size:20px;
+    margin:0 auto 10px
+}
+body[data-theme="moka"] .notifications-empty h3 {
+    font-size:14px;
+    margin:0;
+    color:#30251e
+}
+body[data-theme="moka"] .notifications-empty p {
+    font-size:11px;
+    margin:5px 0 0
+}
+@media(max-width:1050px) {
+    body[data-theme="moka"] .profile-layout {
+        grid-template-columns:1fr
+    }
+    body[data-theme="moka"] .profile-tools-card {
+        grid-template-columns:1fr 1fr
+    }
+}
+@media(max-width:700px) {
+    body[data-theme="moka"] .profile-tools-card {
+        grid-template-columns:1fr
+    }
+    body[data-theme="moka"] .profile-tool-section+.profile-tool-section {
+        border-left:0;
+        border-top:1px solid #c7b39b
+    }
+    body[data-theme="moka"] .notification-title-row {
+        flex-direction:column;
+        gap:3px
+    }
+}

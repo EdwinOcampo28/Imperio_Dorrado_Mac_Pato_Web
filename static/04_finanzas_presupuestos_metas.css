@@ -1,0 +1,232 @@
+/* Mejoras financieras v3: presupuestos, metas, comparativas y movimientos */
+.stats-grid {
+    grid-template-columns:repeat(3,minmax(0,1fr))
+}
+.income-value {
+    color:#557747!important;
+    font-weight:750
+}
+.negative-value {
+    color:#9a493b!important
+}
+.movement-kind {
+    display:inline-block;
+    margin-left:5px;
+    font-size:9px;
+    color:#9b604d
+}
+.filters-panel {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center
+}
+.filters-panel select {
+    max-width:220px
+}
+.budget-form,
+.goal-form,
+.budget-overview {
+    padding:20px;
+    margin-bottom:15px
+}
+.budget-form .form-row {
+    max-width:560px
+}
+.budget-progress-item {
+    padding:14px 0;
+    border-bottom:1px solid var(--line)
+}
+.budget-progress-item:last-child {
+    border-bottom:0
+}
+.budget-progress-head {
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    font-size:11px;
+    margin-bottom:8px
+}
+.budget-progress-head span {
+    font-weight:700
+}
+.budget-progress-item small {
+    display:block;
+    color:var(--muted);
+    font-size:10px;
+    margin-top:6px
+}
+.budget-track,
+.compare-track {
+    height:9px;
+    background:#eee1d0;
+    border-radius:20px;
+    overflow:hidden
+}
+.budget-fill,
+.compare-fill {
+    height:100%;
+    border-radius:20px;
+    background:linear-gradient(90deg,#b98454,#765239);
+    transition:width .2s
+}
+.budget-fill.over-budget {
+    background:#b45443
+}
+.over-budget {
+    color:#a34032!important
+}
+.budget-progress-item .over-budget {
+    color:#a34032
+}
+.goal-form {
+    display:grid;
+    gap:16px
+}
+.goal-form .form-two>div {
+    display:grid;
+    gap:6px
+}
+.goals-grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px
+}
+.goal-card {
+    padding:20px
+}
+.goal-card-top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.goal-symbol {
+    display:grid;
+    place-items:center;
+    width:38px;
+    height:38px;
+    border-radius:12px;
+    background:#f0dfc8;
+    color:#765239;
+    font-size:24px
+}
+.goal-card h2 {
+    font-size:15px;
+    margin:14px 0;
+    color:var(--ink);
+    overflow-wrap:anywhere
+}
+.goal-amounts {
+    display:flex;
+    align-items:baseline;
+    gap:6px;
+    margin-bottom:10px
+}
+.goal-amounts strong {
+    font-size:21px
+}
+.goal-amounts span {
+    font-size:10px;
+    color:var(--muted)
+}
+.goal-progress-foot {
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    margin-top:8px;
+    font-size:10px;
+    color:var(--muted)
+}
+.goal-contribute {
+    display:flex;
+    gap:8px;
+    margin-top:16px
+}
+.goal-contribute input {
+    min-width:0;
+    width:100%;
+    padding:9px;
+    border:1px solid var(--line);
+    border-radius:8px
+}
+.goal-complete {
+    color:#557747;
+    font-weight:750;
+    font-size:11px
+}
+.report-visual {
+    margin:15px 0
+}
+.report-compare {
+    display:grid;
+    gap:16px;
+    margin:20px 0
+}
+.compare-row {
+    display:grid;
+    grid-template-columns:80px minmax(80px,1fr) minmax(100px,auto);
+    gap:12px;
+    align-items:center;
+    font-size:11px
+}
+.compare-row>span {
+    color:var(--muted)
+}
+.compare-row>b {
+    text-align:right
+}
+.income-fill {
+    background:linear-gradient(90deg,#a5b58a,#60764d)
+}
+.report-category-breakdown {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:8px
+}
+.report-cat-row {
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    padding:10px;
+    background:#f5eadb;
+    border-radius:8px;
+    font-size:10px
+}
+.report-cat-row span {
+    color:#806a55
+}
+.report-cat-row b {
+    color:#38271b;
+    white-space:nowrap
+}
+@media(max-width:1100px) {
+    .stats-grid {
+        grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+    .profile-layout {
+        grid-template-columns:1fr
+    }
+    .goals-grid {
+        grid-template-columns:1fr
+    }
+}
+@media(max-width:600px) {
+    .stats-grid {
+        grid-template-columns:1fr 1fr
+    }
+    .report-category-breakdown {
+        grid-template-columns:1fr 1fr
+    }
+    .compare-row {
+        grid-template-columns:62px minmax(50px,1fr) auto;
+        gap:7px
+    }
+    .goal-contribute {
+        flex-direction:column
+    }
+    .budget-form,
+    .goal-form,
+    .budget-overview {
+        padding:15px
+    }
+}

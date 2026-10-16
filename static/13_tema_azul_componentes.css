@@ -1,0 +1,414 @@
+/* Imperio Dorado v5.8 — paleta azul aplicada de forma global, sin mover componentes */
+:root {
+    --bg:#0b1720;
+    --surface:#142a36;
+    --surface2:#1b3542;
+    --ink:#f4f8fb;
+    --muted:#c1d2dc;
+    --line:#34515f;
+    --coffee:#183744;
+    --coffee2:#244957;
+    --copper:#e2b64e;
+    --tan:#f2d57a;
+    --olive:#6ea78c;
+    --rose:#d58d83;
+    --gold:#ffd76b;
+    --shadow:0 8px 22px rgba(0,0,0,.24);
+    --radius:14px;
+    color-scheme:dark
+}
+body {
+    background:var(--bg)!important;
+    color:#f4f8fb!important
+}
+.sidebar {
+    background:linear-gradient(180deg,#102631,#0b1922)!important;
+    color:#f4f8fb!important;
+    border-right:1px solid #34515f
+}
+.main-area,
+.content,
+.view {
+    color:#f4f8fb
+}
+.topbar {
+    background:rgba(16,38,49,.96)!important;
+    border-color:#34515f!important
+}
+.breadcrumb,
+.breadcrumb b,
+.today-label,
+.page-heading h1,
+.panel-heading h2,
+.table-title h2,
+.settings-heading h2,
+.stat-card>strong,
+.category-value {
+    color:#f7fbff!important
+}
+.page-heading p,
+.panel-heading p,
+.table-title p,
+.settings-heading p,
+.stat-top,
+.stat-card>small,
+.category-name,
+.category-foot,
+.category-foot b,
+.muted-small,
+.breadcrumb span {
+    color:#c2d5df!important
+}
+.panel,
+.stat-card,
+.settings-panel,
+.table-panel,
+.profile-combined,
+.profile-tools-card,
+.profile-tool-section,
+.budget-form,
+.budget-overview,
+.habits-panel,
+.habits-insights-panel,
+.report-note,
+.report-summary,
+.report-compare,
+.report-category-breakdown,
+.alert-intro,
+.alert-card,
+.settings-reset-card,
+.table-footer,
+.table-head,
+.contribution-summary,
+.empty-state,
+.modal-card,
+.dialog-card,
+.toast,
+.filter-bar,
+.toolbar,
+.search-panel,
+.recurring-panel,
+.recurring-list-panel {
+    background:linear-gradient(145deg,#18323f,#122732)!important;
+    border-color:#365563!important;
+    color:#f3f8fb!important;
+    box-shadow:inset 0 1px 0 #ffffff08,
+    0 7px 18px #0003
+}
+/* Todos los fondos blancos/crema que aparezcan dentro de la aplicación pasan a azul */
+.view [style*="background: white"],
+.view [style*="background:#fff"],
+.view [style*="background: #fff"],
+.view [style*="background: #ffffff"],
+.view [style*="background:#ffffff"],
+.view [style*="background: rgb(255"] {
+    background:#18323f!important;
+    color:#f4f8fb!important
+}
+.recurring-item,
+.recurring-item:where(:not(.is-due)),
+.recurring-item.is-due,
+.settings-reset-card,
+.settings-preview,
+.report-note,
+.report-summary,
+.alert-intro,
+.table-footer,
+.table-head,
+.contribution-summary {
+    background:linear-gradient(145deg,#1b3947,#142b37)!important;
+    border-color:#3d6170!important;
+    color:#f4f8fb!important
+}
+.recurring-item *,
+.settings-reset-card *,
+.settings-preview *,
+.report-note *,
+.report-summary *,
+.alert-intro *,
+.contribution-summary * {
+    color:inherit
+}
+.recurring-item strong,
+.recurring-item b,
+.recurring-item .recurring-amount,
+.recurring-item .amount {
+    color:#fff!important
+}
+.recurring-item small,
+.recurring-item p,
+.recurring-item span,
+.settings-reset-card p,
+.settings-preview p {
+    color:#c7d9e2!important
+}
+input,
+select,
+textarea,
+.percent-input {
+    background:#0c1c26!important;
+    color:#f7fbff!important;
+    border-color:#426171!important
+}
+input::placeholder,
+textarea::placeholder {
+    color:#a9bfcb!important;
+    opacity:1
+}
+label,
+.form-row label,
+.field-label,
+.recurring-form label,
+.recurring-form .field-label {
+    color:#eaf3f7!important
+}
+label small,
+.form-row label small {
+    color:#b8ccd7!important
+}
+th,
+.table-scroll table th {
+    color:#f4f8fb!important;
+    border-color:#365260!important
+}
+td,
+.table-scroll table td {
+    color:#e3edf3!important;
+    border-color:#2d4856!important
+}
+tbody tr:hover,
+.table-scroll table tbody tr:hover {
+    background:#1e3a48!important
+}
+.btn-primary {
+    background:linear-gradient(180deg,#ffe38a,#e7b43d)!important;
+    color:#172630!important;
+    border:1px solid #ffebaa!important;
+    box-shadow:inset 0 1px 0 #fff6d4,
+    0 4px 0 #8b6725,
+    0 7px 12px #0004!important
+}
+.btn-soft,
+.btn-outline {
+    background:linear-gradient(180deg,#2b4c5c,#1d3948)!important;
+    color:#f5faff!important;
+    border-color:#527384!important;
+    box-shadow:inset 0 1px 0 #ffffff12,
+    0 3px 0 #0a1820!important
+}
+.btn-danger {
+    color:#fff!important
+}
+.text-btn {
+    color:#ffdc79!important
+}
+.panel-tag,
+.heading-count,
+.nav-badge {
+    background:#294956!important;
+    color:#ffe18a!important;
+    border:1px solid #4d6c78
+}
+.stat-icon,
+.settings-icon {
+    box-shadow:inset 0 0 0 1px #ffffff12
+}
+.hero-card {
+    background:linear-gradient(112deg,#12313e,#1d4653 58%,#28505b)!important;
+    border:1px solid #466976
+}
+.hero-sub,
+.hero-meta,
+.meta-chip {
+    color:#d7e6ed!important
+}
+.category-track {
+    background:#29434f!important
+}
+.category-fill {
+    background:#e0b64f!important
+}
+.auth-screen {
+    background:radial-gradient(ellipse at 50% 0%,#244654 0%,#102631 60%,#08141c 100%)!important;
+    color:#f7fbff!important
+}
+.auth-card {
+    background:linear-gradient(145deg,#1b3542,#10232d)!important;
+    border-color:#426171!important;
+    color:#f7fbff!important
+}
+.auth-card h1,
+.auth-card label,
+.auth-card form>label,
+.auth-card #authConfirmWrap label {
+    color:#fff!important
+}
+.auth-description {
+    color:#d1e0e8!important
+}
+.auth-card input {
+    background:#0b1922!important;
+    color:#fff!important;
+    border-color:#4b6b7a!important
+}
+.auth-card input::placeholder {
+    color:#b7cad5!important
+}
+.footer {
+    color:#c2d5df!important;
+    border-color:#34515f!important
+}
+.brand-mark,
+.auth-brand-mark {
+    background:linear-gradient(145deg,#ffe38a,#d9a735)!important;
+    color:#142a36!important;
+    border-color:#ffebae!important
+}
+/* Decoración dorada visible, pero sin cubrir controles ni datos */
+.hero-art {
+    opacity:1!important;
+    filter:drop-shadow(0 5px 10px #0005)
+}
+.pato-empresario,
+.duck-mascot,
+.coin-decoration,
+.coin-art {
+    filter:drop-shadow(0 3px 6px #0006);
+    opacity:1!important
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline:3px solid #ffd76b!important;
+    outline-offset:2px
+}
+/* v5.9: contraste global para hábitos, notificaciones y mascotas decorativas */
+.habits-stat,
+.habit-category-row,
+.habit-insight,
+body[data-theme="moka"] .habits-stat,
+body[data-theme="moka"] .habit-category-row,
+body[data-theme="moka"] .habit-insight,
+body[data-theme="charcoal"] .habits-stat,
+body[data-theme="charcoal"] .habit-category-row,
+body[data-theme="charcoal"] .habit-insight {
+    background:linear-gradient(145deg,#1b3948,#122b37)!important;
+    border:1px solid #3d6170!important;
+    color:#eef7fb!important;
+    box-shadow:inset 0 1px 0 #ffffff0c,
+    0 5px 14px #0003!important
+}
+.habits-stat>span,
+.habits-stat>small,
+.habits-stat>strong,
+.habit-category-head b,
+.habit-change,
+.habit-values,
+.habit-values b,
+.habit-insight b,
+.habit-insight p,
+body[data-theme="moka"] .habits-stat *,
+body[data-theme="moka"] .habit-category-row *,
+body[data-theme="moka"] .habit-insight *,
+body[data-theme="charcoal"] .habits-stat *,
+body[data-theme="charcoal"] .habit-category-row *,
+body[data-theme="charcoal"] .habit-insight * {
+    color:#eef7fb!important
+}
+.habits-stat>strong,
+.habit-values b,
+.habit-category-head b,
+.habit-insight b {
+    color:#fff!important
+}
+.habit-values,
+.habit-insight p,
+.habits-stat>span,
+.habits-stat>small {
+    color:#c7dce6!important
+}
+.habits-increase {
+    color:#ffb7a9!important
+}
+.habits-decrease {
+    color:#9ee4bd!important
+}
+.habit-track {
+    background:#294957!important
+}
+.habit-track span {
+    background:linear-gradient(90deg,#e0b64f,#ffe28a)!important
+}
+.habit-insight-icon {
+    background:linear-gradient(145deg,#ffe28a,#dcae37)!important;
+    color:#142b35!important;
+    box-shadow:0 3px 0 #80601e
+}
+/* El centro de notificaciones usa la misma superficie azul; ningún bloque crema heredado. */
+.notifications-toolbar,
+body[data-theme="moka"] .notifications-toolbar,
+body[data-theme="charcoal"] .notifications-toolbar {
+    background:linear-gradient(145deg,#1b3948,#122b37)!important;
+    border-color:#3d6170!important
+}
+.notifications-toolbar h2,
+.notifications-toolbar p,
+.notification-title-row h3,
+.notification-title-row time,
+.notification-copy p,
+.notifications-empty,
+.notifications-empty h3,
+.notifications-empty p,
+body[data-theme="moka"] .notifications-toolbar *,
+body[data-theme="moka"] .notification-item *,
+body[data-theme="moka"] .notifications-empty *,
+body[data-theme="charcoal"] .notifications-toolbar *,
+body[data-theme="charcoal"] .notification-item *,
+body[data-theme="charcoal"] .notifications-empty * {
+    color:#eaf4f8!important
+}
+.notification-item,
+body[data-theme="moka"] .notification-item,
+body[data-theme="charcoal"] .notification-item {
+    background:linear-gradient(145deg,#183440,#122630)!important;
+    border-color:#304f5d!important
+}
+.notification-item.is-unread,
+body[data-theme="moka"] .notification-item.is-unread,
+body[data-theme="charcoal"] .notification-item.is-unread {
+    background:linear-gradient(145deg,#204655,#173442)!important;
+    border-left:3px solid #ffd66d!important
+}
+.notification-item.is-read,
+body[data-theme="moka"] .notification-item.is-read,
+body[data-theme="charcoal"] .notification-item.is-read {
+    background:linear-gradient(145deg,#172f3a,#112630)!important
+}
+.notification-symbol,
+body[data-theme="moka"] .notification-symbol,
+body[data-theme="charcoal"] .notification-symbol {
+    background:#294957!important;
+    color:#ffdc79!important;
+    border:1px solid #4b6b79!important
+}
+.notification-actions .text-btn,
+body[data-theme="moka"] .notification-actions .text-btn,
+body[data-theme="charcoal"] .notification-actions .text-btn {
+    color:#ffdc79!important
+}
+.notification-actions .notification-delete {
+    color:#ffb7ad!important
+}
+/* Mascotas y monedas decorativas: visibles sobre el azul sin invadir textos ni controles. */
+.hero-art,
+.pato-empresario,
+.duck-mascot,
+.coin-decoration,
+.coin-art,
+.notification-mascot,
+.background-mascot {
+    opacity:1!important;
+    filter:drop-shadow(0 5px 9px rgba(0,0,0,.55)) saturate(1.18)!important
+}

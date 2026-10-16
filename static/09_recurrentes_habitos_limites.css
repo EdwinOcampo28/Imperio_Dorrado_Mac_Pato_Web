@@ -1,0 +1,402 @@
+/* Gastos recurrentes: panel compacto y adaptable */
+.recurring-panel {
+    margin:0 0 20px;
+    padding:20px;
+}
+.recurring-form {
+    display:grid;
+    grid-template-columns:1.35fr 1fr 1fr .9fr 1fr auto;
+    gap:12px;
+    align-items:end;
+    margin:16px 0 18px
+}
+.recurring-form>div {
+    min-width:0
+}
+.recurring-form input,
+.recurring-form select {
+    width:100%;
+    min-width:0;
+    background:#0f2029;
+    color:#f5f8fa;
+    border:1px solid #385765;
+    border-radius:7px;
+    box-shadow:inset 0 1px 3px #0005;
+    min-height:37px
+}
+.recurring-form input::placeholder {
+    color:#9bb0bb;
+    opacity:1
+}
+.recurring-form input:focus,
+.recurring-form select:focus {
+    outline:2px solid #ffd66b;
+    outline-offset:1px;
+    border-color:#ffd66b
+}
+.recurring-form label,
+.recurring-form .field-label {
+    color:#eaf3f7!important
+}
+.recurring-form>button {
+    min-height:37px;
+    border-radius:9px;
+    box-shadow:inset 0 1px 0 #fff8d9,
+    0 3px 0 #8c6722,
+    0 5px 12px #0004
+}
+.recurring-list {
+    display:grid;
+    gap:9px
+}
+.recurring-item {
+    display:grid;
+    grid-template-columns:minmax(150px,1fr) auto auto;
+    gap:16px;
+    align-items:center;
+    padding:13px 15px;
+    border:1px solid #42616b;
+    border-radius:12px;
+    background:linear-gradient(145deg,#1d3542,#142832)
+}
+.recurring-item.is-due {
+    border-left:4px solid #b66a45
+}
+.recurring-item>div:first-child {
+    display:grid;
+    gap:4px;
+    min-width:0
+}
+.recurring-item small {
+    color:#c5d6df;
+    font-size:.82rem
+}
+.recurring-item-actions {
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap
+}
+.recurring-item-actions .btn {
+    padding:8px 11px;
+    white-space:nowrap
+}
+#categoryFieldWrap[hidden] {
+    display:none!important
+}
+@media(max-width:1100px) {
+    .recurring-form {
+        grid-template-columns:repeat(3,minmax(0,1fr))
+    }
+    .recurring-form>button {
+        min-height:42px
+    }
+}
+@media(max-width:650px) {
+    .recurring-panel {
+        padding:14px
+    }
+    .recurring-form {
+        grid-template-columns:1fr 1fr
+    }
+    .recurring-form>button {
+        grid-column:1/-1
+    }
+    .recurring-item {
+        grid-template-columns:1fr auto
+    }
+    .recurring-item-actions {
+        grid-column:1/-1
+    }
+    .recurring-item-actions .btn {
+        flex:1
+    }
+}
+/* v3.9: análisis de hábitos y contraste Moka coherente */
+.habits-month-control {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap
+}
+.habits-month-control label {
+    font-size:11px;
+    font-weight:750;
+    color:var(--ink)
+}
+.habits-month-control input {
+    padding:9px 11px;
+    border:1px solid var(--line);
+    border-radius:9px;
+    background:var(--surface);
+    color:var(--ink)
+}
+.habits-summary-grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+    margin-bottom:14px
+}
+.habits-stat {
+    padding:16px;
+    min-width:0
+}
+.habits-stat>span,
+.habits-stat>small {
+    display:block;
+    color:#5a4637;
+    font-size:11px
+}
+.habits-stat>strong {
+    display:block;
+    font-size:clamp(17px,2vw,24px);
+    margin:9px 0 5px;
+    color:#30251e;
+    overflow-wrap:anywhere;
+    font-variant-numeric:tabular-nums
+}
+.habits-panel,
+.habits-insights-panel {
+    padding:18px 20px;
+    margin-bottom:14px
+}
+.habits-category-list,
+.habits-insights-list {
+    display:grid;
+    gap:10px
+}
+.habit-category-row {
+    padding:13px 14px;
+    border:1px solid #c8b49e;
+    border-radius:10px;
+    background:#e9dece
+}
+.habit-category-head,
+.habit-values {
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap
+}
+.habit-category-head b {
+    font-size:12px;
+    color:#30251e
+}
+.habit-change {
+    font-size:11px;
+    font-weight:750;
+    color:#55402f
+}
+.habits-increase {
+    color:#873f2f!important
+}
+.habits-decrease {
+    color:#3d6540!important
+}
+.habit-values {
+    font-size:10px;
+    color:#594637;
+    margin-top:7px
+}
+.habit-values b {
+    color:#30251e;
+    margin-left:4px
+}
+.habit-track {
+    height:6px;
+    border-radius:10px;
+    background:#d2c0aa;
+    margin-top:10px;
+    overflow:hidden
+}
+.habit-track span {
+    display:block;
+    height:100%;
+    background:#8b694c;
+    border-radius:10px
+}
+.habit-insight {
+    display:flex;
+    gap:11px;
+    align-items:flex-start;
+    padding:12px;
+    border:1px solid #c8b49e;
+    border-radius:10px;
+    background:#e9dece
+}
+.habit-insight-icon {
+    display:grid;
+    place-items:center;
+    flex:0 0 30px;
+    height:30px;
+    border-radius:8px;
+    background:#d8c4ae;
+    color:#503526;
+    font-weight:800
+}
+.habit-insight b {
+    font-size:12px;
+    color:#30251e
+}
+.habit-insight p {
+    font-size:11px;
+    line-height:1.5;
+    color:#594637;
+    margin:4px 0 0
+}
+/* La tarjeta de borrado comparte la superficie normal; el botón conserva su señal de acción. */
+body[data-theme="moka"] .profile-danger-card {
+    background:#eee3d4!important;
+    border:0!important;
+    border-left:1px solid #c7b39b!important;
+    border-radius:0!important
+}
+body[data-theme="moka"] .profile-danger-card .settings-heading h2 {
+    color:#30251e!important
+}
+body[data-theme="moka"] .profile-danger-card .settings-heading p {
+    color:#574536!important
+}
+body[data-theme="moka"] .profile-danger-card .danger-icon {
+    background:#ded0bd!important;
+    color:#493123!important
+}
+/* Contraste de lectura uniforme: texto oscuro sobre superficies claras, sin excepciones de bajo contraste. */
+body[data-theme="moka"] .page-heading h1,
+body[data-theme="moka"] .panel-heading h2,
+body[data-theme="moka"] .table-title h2,
+body[data-theme="moka"] .settings-heading h2,
+body[data-theme="moka"] .stat-card>strong,
+body[data-theme="moka"] .table-scroll td,
+body[data-theme="moka"] .form-row label,
+body[data-theme="moka"] .field-label,
+body[data-theme="moka"] .modal-heading h2 {
+    color:#30251e!important
+}
+body[data-theme="moka"] .page-heading p,
+body[data-theme="moka"] .panel-heading p,
+body[data-theme="moka"] .table-title p,
+body[data-theme="moka"] .settings-heading p,
+body[data-theme="moka"] .muted-small,
+body[data-theme="moka"] .stat-card>small,
+body[data-theme="moka"] .stat-top,
+body[data-theme="moka"] .empty-state,
+body[data-theme="moka"] .modal-heading p {
+    color:#594637!important
+}
+body[data-theme="moka"] .habits-stat,
+body[data-theme="moka"] .habit-category-row,
+body[data-theme="moka"] .habit-insight {
+    box-shadow:none
+}
+@media(max-width:800px) {
+    .habits-summary-grid {
+        grid-template-columns:1fr
+    }
+    .habits-panel,
+    .habits-insights-panel {
+        padding:14px
+    }
+    .habits-month-control {
+        width:100%
+    }
+}
+/* v3.9: ajustes de contraste aplicados al tema activo charcoal */
+body[data-theme="charcoal"] .profile-danger-card {
+    background:#30221b!important;
+    border:0!important;
+    border-top:1px solid #5b4030!important;
+    border-radius:0!important
+}
+body[data-theme="charcoal"] .profile-danger-card .settings-heading h2 {
+    color:#f0dfcf!important
+}
+body[data-theme="charcoal"] .profile-danger-card .settings-heading p {
+    color:#d0b7a0!important
+}
+body[data-theme="charcoal"] .profile-danger-card .danger-icon {
+    background:#493326!important;
+    color:#e7b98d!important
+}
+body[data-theme="charcoal"] .profile-danger-card .btn-danger {
+    background:#8b493b!important;
+    border-color:#74392e!important;
+    color:#fff7ef!important
+}
+body[data-theme="charcoal"] .page-heading h1,
+body[data-theme="charcoal"] .panel-heading h2,
+body[data-theme="charcoal"] .table-title h2,
+body[data-theme="charcoal"] .settings-heading h2,
+body[data-theme="charcoal"] .stat-card>strong,
+body[data-theme="charcoal"] .table-scroll td,
+body[data-theme="charcoal"] .form-row label,
+body[data-theme="charcoal"] .field-label,
+body[data-theme="charcoal"] .modal-heading h2 {
+    color:#f0dfcf!important
+}
+body[data-theme="charcoal"] .page-heading p,
+body[data-theme="charcoal"] .panel-heading p,
+body[data-theme="charcoal"] .table-title p,
+body[data-theme="charcoal"] .settings-heading p,
+body[data-theme="charcoal"] .muted-small,
+body[data-theme="charcoal"] .stat-card>small,
+body[data-theme="charcoal"] .stat-top,
+body[data-theme="charcoal"] .empty-state,
+body[data-theme="charcoal"] .modal-heading p {
+    color:#d0b7a0!important
+}
+body[data-theme="charcoal"] .habits-month-control label {
+    color:#f0dfcf!important
+}
+body[data-theme="charcoal"] .habits-month-control input {
+    background:#211713!important;
+    color:#f4e4d5!important;
+    border-color:#674a37!important
+}
+body[data-theme="charcoal"] .habits-stat>span,
+body[data-theme="charcoal"] .habits-stat>small {
+    color:#d0b7a0!important
+}
+body[data-theme="charcoal"] .habits-stat>strong,
+body[data-theme="charcoal"] .habit-category-head b,
+body[data-theme="charcoal"] .habit-values b,
+body[data-theme="charcoal"] .habit-insight b {
+    color:#f0dfcf!important
+}
+body[data-theme="charcoal"] .habit-category-row,
+body[data-theme="charcoal"] .habit-insight {
+    background:#392920;
+    border-color:#5b4030
+}
+body[data-theme="charcoal"] .habit-change,
+body[data-theme="charcoal"] .habit-values,
+body[data-theme="charcoal"] .habit-insight p {
+    color:#d0b7a0
+}
+body[data-theme="charcoal"] .habit-track {
+    background:#4b3629
+}
+body[data-theme="charcoal"] .habit-track span {
+    background:#c08b5d
+}
+body[data-theme="charcoal"] .habits-increase {
+    color:#f0a18c!important
+}
+body[data-theme="charcoal"] .habits-decrease {
+    color:#b8d3a2!important
+}
+/* Ajuste v4.0: reglas específicas de la tarjeta de configuración de límites. */
+.settings-reset-card {
+    margin-top:14px;
+    padding:14px 15px;
+    border:1px solid var(--line);
+    border-radius:11px;
+    background:var(--surface2);
+    box-shadow:none
+}
+.settings-reset-card .settings-heading {
+    margin-bottom:10px
+}
+.settings-reset-card .settings-heading p {
+    max-width:620px
+}

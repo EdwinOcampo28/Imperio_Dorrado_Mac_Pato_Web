@@ -43,3 +43,8 @@ Mantén los archivos juntos dentro de la carpeta del proyecto.
 INICIO DEL CONTROL FINANCIERO
 -----------------------------
 A partir del 15 de octubre de 2026, los cálculos del panel, presupuestos, reportes y cierres consideran únicamente movimientos fechados desde esa fecha hasta el día actual. Los movimientos anteriores se conservan en el historial y aparecen marcados como 'Histórico · no cuenta'; no se borran ni afectan los totales.
+
+
+CSS MODULARIZADO
+----------------
+Los estilos se separaron en archivos CSS por áreas funcionales. static/styles.css funciona como archivo principal e importa los módulos en el mismo orden en que aparecían las reglas originales, para conservar la cascada y evitar cambios intencionales de diseño. Para mantener la compatibilidad, todos los archivos CSS deben permanecer en la carpeta static.

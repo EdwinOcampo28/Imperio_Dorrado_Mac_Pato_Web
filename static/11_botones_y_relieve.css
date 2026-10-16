@@ -1,0 +1,344 @@
+/* v5.5 — refinamiento de contraste y botones con relieve sobre tema azul petróleo.
+   Reglas concentradas aquí para sustituir visualmente las paletas heredadas sin tocar la lógica. */
+:root {
+    --bg:#0c1822;
+    --surface:#172733;
+    --surface2:#203543;
+    --ink:#f5f8fb;
+    --muted:#c2d0d9;
+    --line:#3c5667;
+    --coffee:#173e50;
+    --coffee2:#245a70;
+    --copper:#e6b84f;
+    --tan:#f1d17c;
+    --olive:#77b69a;
+    --rose:#e58d85;
+    --gold:#ffd66d;
+    --shadow:0 8px 22px rgba(0,0,0,.24);
+    --radius:14px
+}
+body {
+    background:var(--bg);
+    color:var(--ink)
+}
+.topbar {
+    background:rgba(16,31,43,.96);
+    border-color:#304858
+}
+.breadcrumb,
+.today-label {
+    color:#c5d5df
+}
+.breadcrumb b {
+    color:#fff
+}
+.page-heading h1,
+.panel-heading h2,
+.table-title h2,
+.settings-heading h2 {
+    color:#f8fbff
+}
+.page-heading p,
+.panel-heading p,
+.table-title p,
+.settings-heading p,
+.stat-card>small,
+.muted-small {
+    color:#c0d0db
+}
+.eyebrow {
+    color:#ffd66d
+}
+.panel,
+.stat-card {
+    background:linear-gradient(145deg,#1b303e,#14232e);
+    border-color:#385365;
+    box-shadow:0 8px 20px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.045)
+}
+.stat-top,
+.category-name,
+.category-foot,
+.close-history-values>span,
+.close-history-row>div:first-child small {
+    color:#c3d2dc
+}
+.stat-card>strong,
+.category-value,
+.category-foot b,
+.close-history-values>span b {
+    color:#fff
+}
+.panel-tag {
+    background:#284656;
+    color:#ffdc80;
+    border:1px solid #47687a
+}
+.category-track,
+.budget-track,
+.limit-track {
+    background:#304653
+}
+.category-fill {
+    background:linear-gradient(90deg,#b58a32,#ffdc78)
+}
+.table-scroll table th {
+    color:#dce7ef;
+    border-color:#3a5262
+}
+.table-scroll table td {
+    color:#f0f5f8;
+    border-color:#304858
+}
+.table-scroll table tbody tr:hover {
+    background:#203746
+}
+input,
+select,
+textarea {
+    background:#101e29;
+    color:#f7fbff;
+    border-color:#466174
+}
+input::placeholder,
+textarea::placeholder {
+    color:#aebfca;
+    opacity:1
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline:2px solid #e9bd51;
+    outline-offset:1px;
+    border-color:#ffd66d
+}
+label {
+    color:#e8f0f5
+}
+/* Botones elevados: borde superior iluminado, sombra inferior y estado activo perceptible. */
+.btn {
+    min-height:36px;
+    border-radius:10px;
+    font-weight:800;
+    letter-spacing:.05px;
+    transition:transform .15s,
+    box-shadow .15s,
+    filter .15s
+}
+.btn-primary,
+.auth-submit {
+    background:linear-gradient(180deg,#ffdf83 0%,#e8b43c 100%);
+    color:#14232c;
+    border:1px solid #ffe7a4;
+    box-shadow:inset 0 1px 0 #fff4c9,
+    0 4px 0 #8c6722,
+    0 7px 14px rgba(0,0,0,.25)
+}
+.btn-primary:hover,
+.auth-submit:hover {
+    background:linear-gradient(180deg,#ffe9a5,#f0c34f);
+    filter:brightness(1.04);
+    box-shadow:inset 0 1px 0 #fff7db,
+    0 4px 0 #8c6722,
+    0 9px 17px rgba(0,0,0,.3)
+}
+.btn-primary:active,
+.auth-submit:active {
+    transform:translateY(3px);
+    box-shadow:inset 0 1px 0 #fff4c9,
+    0 1px 0 #8c6722,
+    0 3px 7px rgba(0,0,0,.22)
+}
+.btn-soft {
+    background:linear-gradient(180deg,#2c4b5c,#203b4b);
+    border:1px solid #527184;
+    color:#f5f9fc;
+    box-shadow:inset 0 1px 0 #ffffff1c,
+    0 3px 0 #0b1821,
+    0 5px 10px #0003
+}
+.btn-soft:hover {
+    background:linear-gradient(180deg,#36596c,#274858);
+    color:#fff
+}
+.btn-outline {
+    background:linear-gradient(180deg,#243c4a,#1b303d);
+    border:1px solid #587283;
+    color:#f2f7fb;
+    box-shadow:inset 0 1px 0 #ffffff1c,
+    0 3px 0 #0b1821,
+    0 5px 10px #0003
+}
+.btn-outline:hover {
+    background:linear-gradient(180deg,#304e5e,#24404f);
+    color:#fff
+}
+button:focus-visible,
+.btn:focus-visible {
+    outline:3px solid #ffdf83;
+    outline-offset:3px
+}
+.nav-link {
+    color:#d2e0e8
+}
+.nav-link:hover {
+    background:#203c4c;
+    color:#fff
+}
+.nav-link.active {
+    background:linear-gradient(100deg,#28546a,#1d3d4e);
+    color:#fff;
+    box-shadow:inset 3px 0 #ffd66d,
+    inset 0 1px 0 #ffffff12
+}
+.nav-icon {
+    color:#ffd66d
+}
+.nav-badge {
+    background:#ffd66d;
+    color:#172733
+}
+.sidebar {
+    background:linear-gradient(180deg,#10232e,#0b1720);
+    color:#f4f8fb;
+    border-right:1px solid #304958
+}
+.brand small,
+.side-caption,
+.sidebar-note {
+    color:#b4c5d0
+}
+.brand-mark {
+    background:linear-gradient(145deg,#ffe18b,#d9a633);
+    color:#182833;
+    box-shadow:inset 0 1px 0 #fff3c7,
+    0 3px 0 #88621d
+}
+.local-pill {
+    background:#172d39;
+    border-color:#385365
+}
+.local-pill small {
+    color:#c1d0da
+}
+.auth-screen {
+    background:radial-gradient(ellipse at 50% 0%,#203e4e 0%,#10222e 58%,#09141c 100%);
+    color:#f6f9fc
+}
+.auth-card {
+    background:linear-gradient(145deg,#1c303c,#12212b);
+    border-color:#466174;
+    box-shadow:0 24px 70px #0008,
+    inset 0 1px 0 #ffffff12
+}
+.auth-card .eyebrow,
+.auth-card .auth-motivation {
+    color:#ffdc79
+}
+.auth-card h1 {
+    color:#fff
+}
+.auth-description {
+    color:#d3dfe6
+}
+.auth-card form>label,
+.auth-card #authConfirmWrap label {
+    color:#f1f5f8
+}
+.auth-card input {
+    background:#0d1a23;
+    color:#fff;
+    border-color:#526b7b
+}
+.auth-card input::placeholder {
+    color:#b5c4ce
+}
+.auth-card input:focus {
+    border-color:#ffd66d;
+    box-shadow:0 0 0 3px #ffd66d35
+}
+.auth-brand-mark {
+    background:#ffd66d;
+    color:#12222c
+}
+.hero-card {
+    background:linear-gradient(112deg,#143342 0%,#1b4a5c 56%,#226276 100%);
+    border:1px solid #426b7b;
+    box-shadow:0 12px 27px #0004
+}
+.hero-kicker {
+    color:#ffdf86
+}
+.hero-sub,
+.meta-chip {
+    color:#e4edf2
+}
+.meta-chip {
+    border-color:#8eb0bd66;
+    background:#ffffff0c
+}
+.stat-icon {
+    box-shadow:inset 0 1px 0 #ffffff25
+}
+.icon-tan,
+.icon-gold {
+    background:#5a4a28;
+    color:#ffe18a
+}
+.icon-olive {
+    background:#254d43;
+    color:#a8e3c6
+}
+.icon-rose {
+    background:#59383b;
+    color:#ffb8ad
+}
+.settings-preview,
+.report-note,
+.report-summary,
+.alert-intro,
+.table-footer,
+.table-head,
+.contribution-summary {
+    background:#1e3441;
+    border-color:#3b5666;
+    color:#eaf1f5
+}
+.contribution-summary-head,
+.contribution-list>div b,
+.contribution-total {
+    color:#fff
+}
+.contribution-summary-head span,
+.contribution-total small,
+.contribution-list>div span,
+.contribution-empty {
+    color:#c0d0da
+}
+.action-confirm-backdrop {
+    background:rgba(2,9,14,.72)
+}
+.action-confirm-modal {
+    background:#172b37;
+    color:#f5f8fb;
+    border-color:#496475
+}
+.action-confirm-modal h2 {
+    color:#fff
+}
+.action-confirm-modal p {
+    color:#d0dce4
+}
+.action-confirm-close {
+    background:#223b49;
+    color:#fff;
+    border-color:#4b6878
+}
+.btn-danger,
+.action-confirm-actions .btn-danger {
+    background:linear-gradient(180deg,#f09b91,#bd554b);
+    color:#fff;
+    border:1px solid #ffc0b8;
+    box-shadow:inset 0 1px 0 #ffffff55,
+    0 3px 0 #74332e
+}
