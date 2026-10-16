@@ -1,0 +1,102 @@
+<section class="view" id="view-limits">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        CONTROL DE GASTOS
+      </div>
+      <h1>
+        Límites
+      </h1>
+      <p>
+        Define cuándo quieres recibir avisos por gastos diarios, semanales y por categoría.
+      </p>
+    </div>
+  </div>
+  <form id="settingsForm" class="settings-layout">
+    <article class="panel settings-panel">
+      <div class="settings-heading">
+        <div class="settings-icon">
+          ⌁
+        </div>
+        <div>
+          <h2>
+            Límites generales
+          </h2>
+          <p>
+            Se comparan con tus promedios históricos.
+          </p>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="dailyLimit">
+          Alerta diaria
+          <small>
+            Porcentaje del promedio diario
+          </small>
+        </label>
+        <div class="percent-input">
+          <input type="number" min="1" max="1000" id="dailyLimit" required>
+          <span>
+            %
+          </span>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="weeklyLimit">
+          Alerta semanal
+          <small>
+            Porcentaje del promedio semanal
+          </small>
+        </label>
+        <div class="percent-input">
+          <input type="number" min="1" max="1000" id="weeklyLimit" required>
+          <span>
+            %
+          </span>
+        </div>
+      </div>
+      <div class="settings-preview" id="settingsPreview">
+      </div>
+      <div class="settings-reset-card limits-reset-card">
+        <div class="settings-heading">
+          <div class="settings-icon">
+            ↺
+          </div>
+          <div>
+            <h2>
+              Configuración de límites
+            </h2>
+            <p>
+              Restablece los porcentajes diarios, semanales y por categoría a sus valores iniciales. No se modificarán tus movimientos, presupuestos ni metas.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-soft" type="button" id="resetSettings">
+          Restablecer límites originales
+        </button>
+      </div>
+    </article>
+    <article class="panel settings-panel">
+      <div class="settings-heading">
+        <div class="settings-icon">
+          ▦
+        </div>
+        <div>
+          <h2>
+            Límites por categoría
+          </h2>
+          <p>
+            Personaliza el porcentaje de referencia para cada categoría.
+          </p>
+        </div>
+      </div>
+      <div id="categoryLimits" class="category-limits">
+      </div>
+      <div class="settings-actions">
+        <button class="btn btn-primary" type="submit">
+          Guardar límites
+        </button>
+      </div>
+    </article>
+  </form>
+</section>

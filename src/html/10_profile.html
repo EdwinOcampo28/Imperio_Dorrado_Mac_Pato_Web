@@ -1,0 +1,135 @@
+<section class="view" id="view-profile">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        TU CUENTA
+      </div>
+      <h1>
+        Mi perfil
+      </h1>
+      <p>
+        Administra tu información de acceso y tu sesión.
+      </p>
+    </div>
+  </div>
+  <div class="profile-layout">
+    <article class="panel profile-combined">
+      <div class="profile-identity">
+        <div class="profile-avatar" id="profileAvatarLarge">
+          EO
+        </div>
+        <div class="profile-info">
+          <span class="profile-kicker">
+            PERFIL PERSONAL
+          </span>
+          <h2 id="profileUsername">
+            Usuario
+          </h2>
+          <p>
+            Cuenta principal
+          </p>
+        </div>
+        <div class="profile-status">
+          <span>
+          </span>
+          Sesión activa
+        </div>
+        <div class="profile-actions">
+          <button class="btn btn-outline" id="profileLogout">
+            Cerrar sesión
+          </button>
+        </div>
+      </div>
+      <div class="profile-security">
+        <div class="settings-heading">
+          <div class="settings-icon">
+            ♙
+          </div>
+          <div>
+            <h2>
+              Seguridad de la cuenta
+            </h2>
+            <p>
+              Actualiza tu contraseña de acceso.
+            </p>
+          </div>
+        </div>
+        <div id="passwordForm" class="password-form" role="group" aria-label="Cambiar contraseña">
+          <label for="currentPassword">
+            Contraseña actual
+          </label>
+          <input id="currentPassword" type="password" autocomplete="current-password" required>
+          <label for="newPassword">
+            Nueva contraseña
+          </label>
+          <input id="newPassword" type="password" minlength="4" autocomplete="new-password" required>
+          <label for="confirmPassword">
+            Confirmar nueva contraseña
+          </label>
+          <input id="confirmPassword" type="password" minlength="4" autocomplete="new-password" required>
+          <button class="btn btn-primary" id="passwordSubmit" type="button">
+            Actualizar contraseña
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="panel profile-tools-card">
+      <section class="profile-tool-section backup-panel profile-backup">
+        <div class="settings-heading">
+          <div class="settings-icon">
+            ↻
+          </div>
+          <div>
+            <h2>
+              Respaldos
+            </h2>
+            <p>
+              Descarga una copia o restaura tus datos desde un archivo JSON.
+            </p>
+          </div>
+        </div>
+        <div class="backup-actions">
+          <button type="button" class="btn btn-outline" id="backupBtn">
+            ↓ Descargar respaldo
+          </button>
+          <button type="button" class="btn btn-outline" id="restoreBtn">
+            ↑ Restaurar respaldo
+          </button>
+          <input type="file" id="restoreFile" accept=".json,application/json" hidden>
+        </div>
+        <p class="muted-small">
+          Restaurar reemplaza los datos actuales. Descarga una copia antes si quieres conservarlos.
+        </p>
+      </section>
+      <section class="profile-tool-section profile-danger-card">
+        <div class="settings-heading">
+          <div class="settings-icon danger-icon">
+            !
+          </div>
+          <div>
+            <h2>
+              Eliminar todos los datos
+            </h2>
+            <p>
+              Primero se descargará un respaldo y después podrás confirmar la eliminación de movimientos, alertas, presupuestos y metas.
+            </p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-danger" id="deleteAllDataBtn">
+          Eliminar todos los datos
+        </button>
+      </section>
+    </article>
+  </div>
+</div>
+</section>
+</div>
+<footer class="footer">
+  <span>
+    IMPERIO DORADO
+    <b>
+      ·
+    </b>
+    FINANZAS PERSONALES
+  </span>
+</footer>

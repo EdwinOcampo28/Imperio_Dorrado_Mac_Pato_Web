@@ -1,0 +1,50 @@
+<section class="view" id="view-goals">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        AHORRO CON PROPÓSITO
+      </div>
+      <h1>
+        Metas de ahorro
+      </h1>
+      <p>
+        Crea objetivos, registra aportes y sigue tu progreso.
+      </p>
+    </div>
+  </div>
+  <form id="goalForm" class="panel goal-form">
+    <div class="form-two">
+      <div>
+        <label class="field-label" for="goalName">
+          Nombre de la meta
+        </label>
+        <input id="goalName" maxlength="80" placeholder="Ej. Fondo de emergencia" required>
+      </div>
+      <div>
+        <label class="field-label" for="goalTarget">
+          Monto objetivo
+        </label>
+        <input id="goalTarget" type="number" min="1" step="1" placeholder="500000" required>
+      </div>
+    </div>
+    <div class="form-two">
+      <div>
+        <label class="field-label" for="goalSaved">
+          Ahorro inicial
+        </label>
+        <input id="goalSaved" type="number" min="0" step="1" value="0">
+      </div>
+      <div>
+        <label class="field-label" for="goalDate">
+          Fecha objetivo (opcional)
+        </label>
+        <input id="goalDate" type="date">
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">
+      ＋ Crear meta
+    </button>
+  </form>
+  <div id="goalsList" class="goals-grid">
+  </div>
+</section>

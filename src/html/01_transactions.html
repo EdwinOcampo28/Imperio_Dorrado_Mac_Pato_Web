@@ -1,0 +1,167 @@
+<section class="view" id="view-transactions">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        REGISTRO Y CONTROL
+      </div>
+      <h1>
+        Movimientos
+      </h1>
+      <p>
+        Consulta, filtra y administra tus gastos.
+      </p>
+    </div>
+    <button class="btn btn-primary" id="addFromList">
+      <span>
+        ＋
+      </span>
+      Registrar movimiento
+    </button>
+  </div>
+  <div class="panel filters-panel">
+    <div class="filter-search">
+      <span>
+        ⌕
+      </span>
+      <input id="searchInput" placeholder="Buscar por descripción..." aria-label="Buscar por descripción">
+    </div>
+    <select id="categoryFilter" aria-label="Filtrar por categoría">
+      <option value="">
+        Todas las categorías
+      </option>
+    </select>
+    <select id="typeFilter" aria-label="Filtrar por tipo">
+      <option value="">
+        Ingresos y gastos
+      </option>
+      <option value="gasto">
+        Solo gastos
+      </option>
+      <option value="ingreso">
+        Solo ingresos
+      </option>
+    </select>
+    <select id="monthFilter" aria-label="Filtrar por mes">
+      <option value="">
+        Todas las fechas
+      </option>
+    </select>
+    <button class="btn btn-soft" id="clearFilters">
+      Limpiar
+    </button>
+  </div>
+  <section class="panel recurring-panel">
+    <div class="panel-heading">
+      <div>
+        <h2>
+          Gastos recurrentes
+        </h2>
+        <p>
+          Programa arriendo, servicios o suscripciones y registra cada vencimiento cuando corresponda.
+        </p>
+      </div>
+      <span class="panel-tag" id="recurringDueCount">
+        0 PENDIENTES
+      </span>
+    </div>
+    <form id="recurringForm" class="recurring-form">
+      <div>
+        <label class="field-label" for="recurringName">
+          Concepto
+        </label>
+        <input id="recurringName" maxlength="120" placeholder="Ej. Arriendo" required>
+      </div>
+      <div>
+        <label class="field-label" for="recurringAmount">
+          Monto
+        </label>
+        <input id="recurringAmount" type="number" min="1" step="1" placeholder="850000" required>
+      </div>
+      <div>
+        <label class="field-label" for="recurringCategory">
+          Categoría
+        </label>
+        <select id="recurringCategory" required>
+        </select>
+      </div>
+      <div>
+        <label class="field-label" for="recurringFrequency">
+          Frecuencia
+        </label>
+        <select id="recurringFrequency">
+          <option value="monthly">
+            Mensual
+          </option>
+          <option value="weekly">
+            Semanal
+          </option>
+          <option value="yearly">
+            Anual
+          </option>
+        </select>
+      </div>
+      <div>
+        <label class="field-label" for="recurringNextDate">
+          Próxima fecha
+        </label>
+        <input id="recurringNextDate" type="date" required>
+      </div>
+      <button class="btn btn-primary" type="submit">
+        ＋ Programar gasto
+      </button>
+    </form>
+    <div id="recurringList" class="recurring-list">
+    </div>
+  </section>
+  <div class="panel table-panel">
+    <div class="table-title">
+      <div>
+        <h2>
+          Todos los movimientos
+        </h2>
+        <p id="resultCount">
+          0 registros
+        </p>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              ID
+            </th>
+            <th>
+              DESCRIPCIÓN
+            </th>
+            <th>
+              CATEGORÍA
+            </th>
+            <th>
+              FECHA
+            </th>
+            <th class="align-right">
+              MONTO
+            </th>
+            <th class="align-right">
+              ACCIONES
+            </th>
+          </tr>
+        </thead>
+        <tbody id="allRows">
+        </tbody>
+      </table>
+    </div>
+    <div class="table-footer">
+      <span id="tableFootCount">
+        0 registros
+      </span>
+      <strong>
+        Total visible
+        <b id="visibleTotal">
+          $ 0
+        </b>
+      </strong>
+    </div>
+  </div>
+</section>
