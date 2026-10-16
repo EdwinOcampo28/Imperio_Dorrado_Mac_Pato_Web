@@ -1,0 +1,65 @@
+<section class="view" id="view-budgets">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        PLANIFICACIÓN MENSUAL
+      </div>
+      <h1>
+        Presupuestos
+      </h1>
+      <p>
+        Define límites de gasto por categoría y consulta cuánto te queda este mes.
+      </p>
+    </div>
+  </div>
+  <form id="budgetForm" class="panel budget-form">
+    <div class="form-row">
+      <label for="monthlyBudget">
+        Presupuesto mensual total
+        <small>
+          Máximo que deseas gastar en el mes
+        </small>
+      </label>
+      <div class="percent-input">
+        <span>
+          $
+        </span>
+        <input id="monthlyBudget" type="number" min="0" step="1000" placeholder="Ej. 800000">
+      </div>
+    </div>
+    <div class="settings-heading">
+      <div class="settings-icon">
+        ▦
+      </div>
+      <div>
+        <h2>
+          Presupuestos por categoría
+        </h2>
+        <p>
+          Si dejas una categoría en cero, no tendrá un límite propio.
+        </p>
+      </div>
+    </div>
+    <div id="budgetCategories" class="category-limits">
+    </div>
+    <div class="settings-actions">
+      <button class="btn btn-primary" type="submit">
+        Guardar presupuestos
+      </button>
+    </div>
+  </form>
+  <div class="panel budget-overview">
+    <div class="panel-heading">
+      <div>
+        <h2>
+          Avance del mes
+        </h2>
+        <p id="budgetMonthLabel">
+          Gastos del mes actual
+        </p>
+      </div>
+    </div>
+    <div id="budgetProgress">
+    </div>
+  </div>
+</section>

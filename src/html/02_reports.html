@@ -1,0 +1,108 @@
+<section class="view" id="view-reports">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        ANÁLISIS FINANCIERO
+      </div>
+      <h1>
+        Reportes
+      </h1>
+      <p>
+        Consulta y compara tus gastos por período.
+      </p>
+    </div>
+  </div>
+  <div class="report-selector">
+    <button class="report-tab active" data-report="daily">
+      Diario
+    </button>
+    <button class="report-tab" data-report="weekly">
+      Semanal
+    </button>
+    <button class="report-tab" data-report="monthly">
+      Mensual
+    </button>
+  </div>
+  <div class="report-summary panel">
+    <div>
+      <span id="reportTitle">
+        Reporte diario
+      </span>
+      <strong id="reportTotal">
+        $ 0
+      </strong>
+      <small id="reportSubtitle">
+        Resumen del período seleccionado
+      </small>
+    </div>
+    <div class="report-symbol">
+      ▤
+    </div>
+  </div>
+  <div class="panel report-visual">
+    <div class="panel-heading">
+      <div>
+        <h2>
+          Ingresos frente a gastos
+        </h2>
+        <p>
+          Comparación del período seleccionado
+        </p>
+      </div>
+    </div>
+    <div id="reportCompare" class="report-compare">
+    </div>
+    <div id="reportCategoryBreakdown" class="report-category-breakdown">
+    </div>
+  </div>
+  <div class="panel table-panel">
+    <div class="table-title">
+      <div>
+        <h2>
+          Detalle del período
+        </h2>
+        <p id="reportCount">
+          0 registros
+        </p>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              ID
+            </th>
+            <th>
+              DESCRIPCIÓN
+            </th>
+            <th>
+              CATEGORÍA
+            </th>
+            <th>
+              FECHA
+            </th>
+            <th class="align-right">
+              MONTO
+            </th>
+          </tr>
+        </thead>
+        <tbody id="reportRows">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="panel report-note">
+    <span class="note-icon">
+      i
+    </span>
+    <div>
+      <b>
+        ¿Cómo se calcula?
+      </b>
+      <p>
+        El reporte diario usa la fecha de hoy; el semanal considera los últimos siete días y el mensual acumula desde el primer día del mes hasta hoy.
+      </p>
+    </div>
+  </div>
+</section>

@@ -19,7 +19,8 @@
 }
 body {
     background:var(--bg)!important;
-    color:#f4f8fb!important
+    color:#f4f8fb!important;
+    font-weight:500
 }
 .sidebar {
     background:linear-gradient(180deg,#102631,#0b1922)!important;
@@ -140,7 +141,8 @@ body {
 .recurring-item span,
 .settings-reset-card p,
 .settings-preview p {
-    color:#c7d9e2!important
+    color:#c7d9e2!important;
+    font-weight:550
 }
 input,
 select,
@@ -148,23 +150,27 @@ textarea,
 .percent-input {
     background:#0c1c26!important;
     color:#f7fbff!important;
-    border-color:#426171!important
+    border-color:#426171!important;
+    font-weight:550
 }
 input::placeholder,
 textarea::placeholder {
     color:#a9bfcb!important;
-    opacity:1
+    opacity:1;
+    font-weight:500
 }
 label,
 .form-row label,
 .field-label,
 .recurring-form label,
 .recurring-form .field-label {
-    color:#eaf3f7!important
+    color:#eaf3f7!important;
+    font-weight:750
 }
 label small,
 .form-row label small {
-    color:#b8ccd7!important
+    color:#b8ccd7!important;
+    font-weight:550
 }
 th,
 .table-scroll table th {
@@ -174,7 +180,8 @@ th,
 td,
 .table-scroll table td {
     color:#e3edf3!important;
-    border-color:#2d4856!important
+    border-color:#2d4856!important;
+    font-weight:550
 }
 tbody tr:hover,
 .table-scroll table tbody tr:hover {
@@ -220,7 +227,8 @@ tbody tr:hover,
 .hero-sub,
 .hero-meta,
 .meta-chip {
-    color:#d7e6ed!important
+    color:#d7e6ed!important;
+    font-weight:550
 }
 .category-track {
     background:#29434f!important
@@ -244,7 +252,8 @@ tbody tr:hover,
     color:#fff!important
 }
 .auth-description {
-    color:#d1e0e8!important
+    color:#d1e0e8!important;
+    font-weight:550
 }
 .auth-card input {
     background:#0b1922!important;
@@ -256,7 +265,8 @@ tbody tr:hover,
 }
 .footer {
     color:#c2d5df!important;
-    border-color:#34515f!important
+    border-color:#34515f!important;
+    font-weight:500
 }
 .brand-mark,
 .auth-brand-mark {

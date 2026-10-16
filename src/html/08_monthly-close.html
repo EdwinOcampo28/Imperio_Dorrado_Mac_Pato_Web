@@ -1,0 +1,79 @@
+<section class="view" id="view-monthly-close">
+  <div class="page-heading">
+    <div>
+      <div class="eyebrow">
+        BALANCE Y PLANIFICACIÓN
+      </div>
+      <h1>
+        Cierre mensual
+      </h1>
+      <p>
+        Compara el presupuesto con el gasto real y conserva un resumen de cada mes.
+      </p>
+    </div>
+  </div>
+  <div class="panel close-controls">
+    <div class="close-month-field">
+      <label for="closeMonth">
+        Mes que deseas cerrar
+      </label>
+      <input id="closeMonth" type="month">
+      <button class="btn btn-primary" id="saveMonthlyClose" type="button">
+        Guardar cierre del mes
+      </button>
+    </div>
+  </div>
+  <div id="monthlyClosePreview" class="monthly-close-grid">
+  </div>
+  <div class="panel close-category-panel">
+    <div class="panel-heading">
+      <div>
+        <h2>
+          Presupuesto frente a gasto real
+        </h2>
+        <p>
+          Comparación por categoría para el mes seleccionado.
+        </p>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              CATEGORÍA
+            </th>
+            <th class="align-right">
+              PRESUPUESTO
+            </th>
+            <th class="align-right">
+              GASTADO
+            </th>
+            <th class="align-right">
+              DIFERENCIA
+            </th>
+            <th>
+              ESTADO
+            </th>
+          </tr>
+        </thead>
+        <tbody id="closeCategoryRows">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="panel close-history-panel">
+    <div class="panel-heading">
+      <div>
+        <h2>
+          Cierres guardados
+        </h2>
+        <p>
+          Resúmenes históricos que ya guardaste.
+        </p>
+      </div>
+    </div>
+    <div id="monthlyCloseHistory">
+    </div>
+  </div>
+</section>

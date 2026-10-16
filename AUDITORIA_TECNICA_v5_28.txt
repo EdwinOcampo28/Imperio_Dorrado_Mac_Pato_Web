@@ -1,0 +1,84 @@
+IMPERIO DORADO — AUDITORÍA TÉCNICA v5.28
+Base: Imperio_Dorado_v5_27_JS_Vertical_Ordenado.zip
+
+ALCANCE
+Se revisaron las referencias de carga, sintaxis del JS operativo, integridad de fragmentos, parseo HTML, imports CSS y equilibrio de llaves CSS.
+No se modificaron index.html, app.js, hojas CSS, fragmentos HTML/JS ni datos. Este informe se añade como documentación.
+
+RESULTADOS
+[OK] JavaScript operativo
+  static/app.js pasa node --check.
+[OK] Integridad de fragmentos JS
+  Los seis fragmentos concatenados reconstruyen exactamente static/app.js.
+[OK] HTML: index.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/01_transactions.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/02_reports.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/03_spending-habits.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/04_budgets.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/05_goals.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/06_alerts.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/07_limits.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/08_monthly-close.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/09_notifications.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: src/html/10_profile.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: INDICE_MODULOS_CSS.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] HTML: INDICE_MODULOS_HTML_JS.html
+  El analizador HTML pudo leer el archivo sin errores de parseo.
+[OK] CSS: static/01_base_responsive.css
+  Llaves equilibradas (312 aperturas, 312 cierres).
+[OK] CSS: static/02_acceso_temas_iniciales.css
+  Llaves equilibradas (69 aperturas, 69 cierres).
+[OK] CSS: static/03_perfil_configuracion.css
+  Llaves equilibradas (113 aperturas, 113 cierres).
+[OK] CSS: static/04_finanzas_presupuestos_metas.css
+  Llaves equilibradas (52 aperturas, 52 cierres).
+[OK] CSS: static/05_tema_y_componentes_financieros.css
+  Llaves equilibradas (68 aperturas, 68 cierres).
+[OK] CSS: static/06_refinamientos_componentes.css
+  Llaves equilibradas (106 aperturas, 106 cierres).
+[OK] CSS: static/07_temas_perfil_contraste.css
+  Llaves equilibradas (169 aperturas, 169 cierres).
+[OK] CSS: static/08_tema_moka_y_perfil.css
+  Llaves equilibradas (65 aperturas, 65 cierres).
+[OK] CSS: static/09_recurrentes_habitos_limites.css
+  Llaves equilibradas (80 aperturas, 80 cierres).
+[OK] CSS: static/10_panel_mascota_motivacion.css
+  Llaves equilibradas (135 aperturas, 135 cierres).
+[OK] CSS: static/11_botones_y_relieve.css
+  Llaves equilibradas (67 aperturas, 67 cierres).
+[OK] CSS: static/12_paleta_global_contraste.css
+  Llaves equilibradas (38 aperturas, 38 cierres).
+[OK] CSS: static/13_tema_azul_componentes.css
+  Llaves equilibradas (59 aperturas, 59 cierres).
+[OK] CSS: static/14_ajustes_finales.css
+  Llaves equilibradas (34 aperturas, 34 cierres).
+[OK] CSS: static/styles.css
+  Llaves equilibradas (0 aperturas, 0 cierres).
+[OK] Carga CSS
+  14 imports encontrados; todos los archivos existen.
+[OK] Referencias locales de index.html
+  Las referencias locales encontradas existen.
+[OK] Módulos CSS
+  14 módulos CSS presentes; styles.css los importa en orden numérico.
+[REVISAR] Fragmentos JS individuales
+  Los seis archivos son cortes de un único app.js y algunos empiezan/terminan a mitad de una instrucción; por diseño solo se validan al concatenarlos. No son módulos ejecutables independientes y no se cargan desde index.html.
+
+NOTAS IMPORTANTES
+1. index.html sigue cargando static/styles.css y static/app.js; los archivos src/html y src/js son material de organización y no participan directamente en la ejecución.
+2. Los fragmentos JS son cortes exactos de app.js, no módulos autónomos. Que un fragmento aislado no pase node --check no significa que el app.js operativo esté roto; sí significa que esos fragmentos no deben ejecutarse individualmente.
+3. Los módulos CSS están cargados mediante @import en orden y sus llaves están equilibradas. Reglas repetidas pueden ser intencionales por la cascada; eliminarlas automáticamente podría cambiar la apariencia.
+4. Esta revisión no sustituye una prueba interactiva en navegador con datos reales ni valida endpoints de servidor (/api/...).
+
+No se alteró el comportamiento de la aplicación ni sus datos.

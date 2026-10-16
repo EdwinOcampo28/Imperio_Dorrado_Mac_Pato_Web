@@ -1,0 +1,9 @@
+IMPERIO DORADO — FUENTES HTML Y JAVASCRIPT EN FORMATO VERTICAL
+
+- src/html/: fragmentos HTML formateados verticalmente para lectura y mantenimiento.
+- src/js/: particiones JavaScript completas y sintácticamente válidas, separadas en límites de instrucciones de nivel superior y formateadas con sangría.
+- static/app.js e index.html siguen siendo los archivos activos originales, sin modificaciones.
+- Los fragmentos de src/ son fuentes de referencia y no se cargan en la aplicación; esto evita cambiar el comportamiento existente.
+- static/styles.css y los 14 módulos CSS se conservaron sin cambios.
+
+Para reconstruir el JavaScript de referencia, concatena src/js/01_app_fragmento.js hasta 06_app_fragmento.js en orden.
