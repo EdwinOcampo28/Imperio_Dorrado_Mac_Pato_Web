@@ -123,8 +123,17 @@
     justify-self:start;
     margin-top:9px
 }
-.top-actions .avatar {
-    cursor:pointer
+#profileBtn.avatar {
+    cursor: pointer;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    background-image: url("pato-empresario.svg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    color: transparent !important;
+    font-size: 0 !important;
 }
 .top-actions .avatar:hover {
     filter:brightness(1.15);

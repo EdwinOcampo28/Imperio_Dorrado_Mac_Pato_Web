@@ -276,7 +276,7 @@ body[data-theme] .report-note,
 body[data-theme] .alert-intro,
 body[data-theme] .settings-preview,
 body[data-theme] .report-summary {
-    background:#211812;
+    background:#211212a8;
     border-color:var(--line);
     color:var(--ink)
 }
