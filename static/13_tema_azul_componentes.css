@@ -327,8 +327,11 @@ body[data-theme="charcoal"] .habit-category-row *,
 body[data-theme="charcoal"] .habit-insight * {
     color:#eef7fb!important
 }
-.habits-stat>strong,
-.habit-values b,
+#view-spending-habits .habits-stat>strong,
+#view-spending-habits .habit-values b,
+#view-spending-habits .habit-change {
+    color:#3bcacd!important
+}
 .habit-category-head b,
 .habit-insight b {
     color:#fff!important
@@ -352,9 +355,18 @@ body[data-theme="charcoal"] .habit-insight * {
     background:linear-gradient(90deg,#e0b64f,#ffe28a)!important
 }
 .habit-insight-icon {
-    background:linear-gradient(145deg,#ffe28a,#dcae37)!important;
-    color:#142b35!important;
-    box-shadow:0 3px 0 #80601e
+    display:grid;
+    place-items:center;
+    flex:0 0 29px;
+    width:29px;
+    height:29px;
+    border:1px solid #9a824a!important;
+    border-radius:9px;
+    background:linear-gradient(145deg,#d8c17e,#b9964b)!important;
+    color:#102b37!important;
+    font-size:14px;
+    font-weight:900;
+    box-shadow:inset 0 1px 0 #e8dab0,0 2px 0 #796432!important
 }
 /* El centro de notificaciones usa la misma superficie azul; ningún bloque crema heredado. */
 .notifications-toolbar,

@@ -161,7 +161,7 @@ body[data-theme="charcoal"] .auth-card input {
     font-size:21px;
     letter-spacing:-.4px;
     margin:9px 0 5px;
-    color:var(--ink);
+    color:#3bcacd!important;
     font-variant-numeric:tabular-nums
 }
 .close-stat>small {
@@ -175,6 +175,11 @@ body[data-theme="charcoal"] .auth-card input {
 }
 .close-category-panel .table-scroll {
     margin-top:12px
+}
+#view-monthly-close .close-category-panel .table-scroll tbody td:nth-child(2),
+#view-monthly-close .close-category-panel .table-scroll tbody td:nth-child(3),
+#view-monthly-close .close-category-panel .table-scroll tbody td:nth-child(4) {
+    color:#3bcacd!important
 }
 .close-history-row {
     display:flex;
@@ -212,7 +217,7 @@ body[data-theme="charcoal"] .auth-card input {
 }
 .close-history-values>span b {
     display:block;
-    color:var(--ink);
+    color:#3bcacd!important;
     font-size:11px;
     margin-top:3px
 }

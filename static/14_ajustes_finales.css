@@ -2,7 +2,10 @@
    Este bloque único prevalece sobre las reglas heredadas sin alterar la estructura ni la lógica. */
 .auth-screen {
     isolation:isolate;
-    background:radial-gradient(ellipse at 50% 12%,#244a59 0%,#122d3a 48%,#08151e 100%)!important;
+    background:
+        radial-gradient(ellipse at 14% 46%,#3bcacd20 0%,transparent 31%),
+        radial-gradient(ellipse at 86% 18%,#267a8a35 0%,transparent 34%),
+        radial-gradient(ellipse at 50% 12%,#244a59 0%,#122d3a 48%,#08151e 100%)!important;
     color:#f7fbff!important
 }
 .auth-screen:before,
@@ -30,18 +33,27 @@
 .auth-card {
     z-index:1;
     position:relative;
-    background:linear-gradient(145deg,#1b3543f5,#10232ff7)!important;
-    border:1px solid #527382!important;
-    box-shadow:0 24px 70px #0008,
-    inset 0 1px 0 #ffffff14!important;
+    display:block;
+    width:min(100%,430px);
+    padding:30px 34px;
+    overflow:hidden;
+    border-radius:22px!important;
+    background:linear-gradient(135deg,#183b49f7,#10232ff9)!important;
+    border:1px solid #3e707d!important;
+    box-shadow:0 28px 90px #0009,
+        inset 0 1px 0 #ffffff16,
+        0 0 0 1px #3bcacd12!important;
     color:#f7fbff!important
 }
+.auth-card > :not(.auth-mascot) {
+    min-width:0
+}
 .auth-card:before {
-    right:-14px;
-    bottom:-18px;
-    width:175px;
-    height:175px;
-    opacity:.2!important;
+    right:6px;
+    bottom:5px;
+    width:112px;
+    height:112px;
+    opacity:.06!important;
     filter:drop-shadow(0 5px 10px #0007)
 }
 .auth-card .eyebrow,
@@ -155,7 +167,7 @@
 }
 .view .panel :is(h1,h2,h3,h4,strong,b),
 .view .stat-card :is(strong,b) {
-    color:#efe2cf;
+    color:#3bcacd;
     font-weight:800
 }
 .view .panel :is(p,label),
@@ -184,15 +196,240 @@
     background:#183441!important;
     color:#f4f9fc!important
 }
+/* Total visible de movimientos: resumen compacto y fácil de distinguir. */
+#view-transactions .table-footer {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:13px 17px;
+    background:linear-gradient(135deg,#153441,#102631);
+    border-top:1px solid #3bcacd45;
+    color:#d0bda8;
+}
+#view-transactions .table-footer > span {
+    color:#c5d5db;
+    font-size:11px;
+    font-weight:600;
+}
+#view-transactions .table-footer > strong {
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:8px 12px;
+    border:1px solid #3bcacd55;
+    border-radius:10px;
+    background:#0a202b;
+    color:#e5edf0;
+    font-size:11px;
+    font-weight:750;
+}
+#view-transactions #visibleTotal {
+    color:#3bcacd;
+    font-size:14px;
+    font-weight:850;
+    font-variant-numeric:tabular-nums;
+}
+
+/* Metas de ahorro: formulario, tarjetas, avance y aportes con jerarquía visual propia. */
+#view-goals #goalForm.goal-form {
+    padding:17px;
+    border:1px solid #3d6574;
+    border-radius:17px;
+    background:linear-gradient(145deg,#183744,#122a35);
+    box-shadow:0 10px 24px #0003,inset 0 1px 0 #ffffff0a;
+}
+#view-goals .goals-grid {
+    gap:15px;
+}
+#view-goals .goal-card {
+    padding:17px;
+    border:1px solid #3a6574;
+    border-radius:17px;
+    background:linear-gradient(150deg,#193945,#112a35);
+    box-shadow:0 10px 24px #0003,inset 0 1px 0 #ffffff0a;
+}
+#view-goals .goal-card-top {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding-bottom:10px;
+    border-bottom:1px solid #3bcacd30;
+}
+#view-goals .goal-symbol {
+    display:grid;
+    place-items:center;
+    width:38px;
+    height:38px;
+    border:1px solid #f0cf72;
+    border-radius:12px;
+    background:linear-gradient(145deg,#ffe18a,#c99a36);
+    color:#182d35;
+    box-shadow:0 4px 0 #87632750;
+}
+#view-goals .goal-card h2 {
+    margin:12px 0;
+    color:#f1e4d2;
+    font-size:15px;
+    font-weight:800;
+    line-height:1.35;
+}
+#view-goals .goal-amounts {
+    display:flex;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:7px;
+    margin-bottom:12px;
+    padding:11px 12px;
+    border:1px solid #3bcacd30;
+    border-radius:11px;
+    background:#0d2530a8;
+}
+#view-goals .goal-amounts strong {
+    color:#3bcacd;
+    font-size:clamp(18px,1.5vw,22px);
+    font-weight:850;
+    font-variant-numeric:tabular-nums;
+}
+#view-goals .goal-amounts span {
+    color:#c4d4da;
+    font-size:11px;
+}
+#view-goals .budget-track {
+    height:10px;
+    overflow:hidden;
+    border:1px solid #41616d;
+    border-radius:999px;
+    background:#091e28;
+    box-shadow:inset 0 1px 2px #0005;
+}
+#view-goals .budget-fill {
+    border-radius:999px;
+    background:linear-gradient(90deg,#3bcacd,#b9d98c);
+    box-shadow:0 0 8px #3bcacd22;
+}
+#view-goals .goal-progress-foot {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:7px 12px;
+    margin-top:10px;
+    padding:9px 10px;
+    border:1px solid #355662;
+    border-radius:10px;
+    background:#102a35;
+    color:#c5d5db;
+    font-size:10px;
+    font-weight:600;
+}
+#view-goals .contribution-summary {
+    margin:13px 0 2px;
+    padding:12px;
+    border:1px solid #365d6a;
+    border-radius:12px;
+    background:linear-gradient(145deg,#132e39,#102630);
+    color:#e3edf0;
+}
+#view-goals .contribution-summary-head {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:6px 10px;
+    color:#d5e2e6;
+}
+#view-goals .contribution-total {
+    margin:9px 0;
+    color:#3bcacd;
+    font-size:16px;
+    font-weight:800;
+}
+#view-goals .contribution-summary small,
+#view-goals .goal-progress-foot span:last-child {
+    color:#b9cbd2;
+}
+#view-goals .goal-contribute {
+    display:flex;
+    align-items:stretch;
+    gap:8px;
+    margin-top:13px;
+    padding-top:12px;
+    border-top:1px solid #3bcacd25;
+}
+#view-goals .goal-contribute input {
+    min-width:0;
+    border:1px solid #426675;
+    border-radius:9px;
+    background:#0c202a;
+    color:#f4f9fc;
+}
+#view-goals .goal-contribute input:focus {
+    border-color:#3bcacd;
+    outline:2px solid #3bcacd28;
+    outline-offset:1px;
+}
+#view-goals .empty-state {
+    border:1px solid #3a6574;
+    border-radius:16px;
+    background:linear-gradient(145deg,#183744,#122a35);
+    color:#c7d8de;
+}
+
 @media(max-width:800px) {
     .auth-screen:before,
     .auth-screen:after {
         width:28vw;
         height:38vh;
-        opacity:.09
+        opacity:.07
+    }
+    .auth-card {
+        display:block;
+        width:min(100%,430px);
+        padding:26px 22px
+    }
+    .auth-card > :not(.auth-mascot) {
+        min-width:0
+    }
+    .auth-card .eyebrow {
+        margin-bottom:8px;
+    }
+    .auth-card h1 {
+        padding:11px 12px;
+        font-size:clamp(22px,5.4vw,27px);
+    }
+    .auth-description {
+        margin-bottom:16px;
+    }
+    .auth-mascot {
+        grid-column:auto;
+        grid-row:auto;
+        width:130px;
+        max-width:none;
+        height:118px;
+        margin:0 auto 4px
+    }
+    #view-transactions .table-footer {
+        align-items:flex-start;
+        flex-direction:column;
+    }
+    #view-transactions .table-footer > strong {
+        max-width:100%;
+        flex-wrap:wrap;
+    }
+    #view-goals #goalForm.goal-form,
+    #view-goals .goal-card {
+        padding:14px;
+    }
+    #view-goals .goal-contribute {
+        flex-wrap:wrap;
+    }
+    #view-goals .goal-contribute .btn {
+        max-width:100%;
+        white-space:normal;
     }
     .auth-card:before {
-        opacity:.12!important
+        opacity:.06!important
     }
 }
 @media(prefers-reduced-motion:reduce) {
