@@ -56,11 +56,19 @@ function renderTransactions(){
     const months=[...new Set(state.gastos.map(g=>g.fecha.slice(0,
     7)))].sort().reverse();
     const monthKeep=month;
-    $('#monthFilter').innerHTML='<option value="">Todas las fechas</option>'+months.map(m=>{
+    const days=[...new Set(state.gastos.map(g=>g.fecha))].sort().reverse();
+    const monthOptions=months.map(m=>{
         const [y,
         mo]=m.split('-').map(Number);
         return `<option value="${m}">${new Date(y,mo-1,1).toLocaleDateString('es-CO',{month:'long',year:'numeric'})}</option>`
-    }
-    ).join('');
+    }).join('');
+    const dayOptions=days.map(date=>{
+        const [y,
+        mo,
+        d]=date.split('-').map(Number);
+        const label=new Date(y,mo-1,d,12).toLocaleDateString('es-CO',{weekday:'short',day:'2-digit',month:'long',year:'numeric'});
+        return `<option value="${date}">${label}</option>`
+    }).join('');
+    $('#monthFilter').innerHTML='<option value="">Todas las fechas</option><optgroup label="Por mes">'+monthOptions+'</optgroup><optgroup label="Día específico">'+dayOptions+'</optgroup>';
     $('#monthFilter').value=monthKeep
 }
