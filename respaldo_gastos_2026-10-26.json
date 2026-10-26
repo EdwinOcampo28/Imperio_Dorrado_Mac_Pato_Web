@@ -1,0 +1,1670 @@
+{
+  "app": "Gestor de Gastos - Edwin Ocampo",
+  "version": 6,
+  "exportado": "2026-10-26T17:03:39.244Z",
+  "gastos": [
+    {
+      "id": 1,
+      "monto": 9000,
+      "categoria": "Comida",
+      "descripcion": "Desayuno",
+      "fecha": "2025-12-05",
+      "tipo": "gasto"
+    },
+    {
+      "id": 2,
+      "monto": 22000,
+      "categoria": "Entretenimiento",
+      "descripcion": "Youtube Premiun",
+      "fecha": "2025-12-01",
+      "tipo": "gasto"
+    },
+    {
+      "id": 3,
+      "monto": 15500,
+      "categoria": "Salud",
+      "descripcion": "Inyección",
+      "fecha": "2025-12-15",
+      "tipo": "gasto"
+    },
+    {
+      "id": 4,
+      "monto": 14000,
+      "categoria": "Otros",
+      "descripcion": "Prestamo",
+      "fecha": "2025-12-05",
+      "tipo": "gasto"
+    },
+    {
+      "id": 5,
+      "monto": 15000,
+      "categoria": "Salud",
+      "descripcion": "inyección",
+      "fecha": "2025-12-08",
+      "tipo": "gasto"
+    },
+    {
+      "id": 6,
+      "monto": 23000,
+      "categoria": "Entretenimiento",
+      "descripcion": "Netflix",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 7,
+      "monto": 32000,
+      "categoria": "Comida",
+      "descripcion": "Almuerzos",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 8,
+      "monto": 15000,
+      "categoria": "Comida",
+      "descripcion": "Cena",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 9,
+      "monto": 50000,
+      "categoria": "Transporte",
+      "descripcion": "Aceite Moto",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 10,
+      "monto": 150000,
+      "categoria": "Servicios",
+      "descripcion": "Renta",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 11,
+      "monto": 45000,
+      "categoria": "Hogar",
+      "descripcion": "Servicio",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 12,
+      "monto": 50000,
+      "categoria": "Transporte",
+      "descripcion": "LLanta Moto",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 13,
+      "monto": 20000,
+      "categoria": "Otros",
+      "descripcion": "Regalo",
+      "fecha": "2025-12-10",
+      "tipo": "gasto"
+    },
+    {
+      "id": 14,
+      "monto": 12000,
+      "categoria": "Comida",
+      "descripcion": "Almuerzo",
+      "fecha": "2026-01-08",
+      "tipo": "gasto"
+    },
+    {
+      "id": 15,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Huevos Pan & Cafe Con Leche)",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 16,
+      "monto": 40000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilios Dolly",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 17,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio Don Nestor",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 18,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio  Christian GG",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 19,
+      "monto": 14500,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Cena",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 20,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Huevos Pan & Cafe Con Leche)",
+      "fecha": "2026-10-16"
+    },
+    {
+      "id": 21,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Compensación",
+      "fecha": "2026-10-16"
+    },
+    {
+      "id": 22,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio Cristian",
+      "fecha": "2026-10-16"
+    },
+    {
+      "id": 23,
+      "monto": 15000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Cena (Sopita & Castillas De Cerdo )",
+      "fecha": "2026-10-16"
+    },
+    {
+      "id": 24,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Huevos Pan & Cafe Con Leche)",
+      "fecha": "2026-10-17"
+    },
+    {
+      "id": 25,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Consignación Banco Bogota Angie)",
+      "fecha": "2026-10-17"
+    },
+    {
+      "id": 26,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Pago Cuota Jairo)",
+      "fecha": "2026-10-17"
+    },
+    {
+      "id": 27,
+      "monto": 40000,
+      "tipo": "gasto",
+      "categoria": "Otros",
+      "descripcion": "Ayuda Mama",
+      "fecha": "2026-10-17"
+    },
+    {
+      "id": 28,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Ayuda Prima",
+      "fecha": "2026-10-17"
+    },
+    {
+      "id": 29,
+      "monto": 270000,
+      "tipo": "gasto",
+      "categoria": "Deudas",
+      "descripcion": "Cuota Banco",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 30,
+      "monto": 300000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Prexxa",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 31,
+      "monto": 6500,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Empanada Jugo)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 32,
+      "monto": 30000,
+      "tipo": "gasto",
+      "categoria": "Otros",
+      "descripcion": "Pedido Temu",
+      "fecha": "2026-10-15"
+    },
+    {
+      "id": 33,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Dimicilio (Prima Documentos)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 34,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Cristian Caja)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 35,
+      "monto": 35000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Junior (Domis)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 36,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Pilar Gratamira)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 37,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Coopetran Terminal)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 38,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Peinado)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 39,
+      "monto": 6000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Cena (Empanadas)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 40,
+      "monto": 6000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Empanada & Jugo)",
+      "fecha": "2026-10-20"
+    },
+    {
+      "id": 41,
+      "monto": 8400,
+      "tipo": "gasto",
+      "categoria": "Entretenimiento",
+      "descripcion": "Diamantes (Free Fire)",
+      "fecha": "2026-10-19"
+    },
+    {
+      "id": 42,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Cadena Venegiros)",
+      "fecha": "2026-10-20"
+    },
+    {
+      "id": 43,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Retiro Cajero Jhefry",
+      "fecha": "2026-10-20"
+    },
+    {
+      "id": 44,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Peinado)",
+      "fecha": "2026-10-20"
+    },
+    {
+      "id": 45,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Junior)",
+      "fecha": "2026-10-20"
+    },
+    {
+      "id": 46,
+      "monto": 4000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Cena (Una Papa)",
+      "fecha": "2026-10-20"
+    },
+    {
+      "id": 47,
+      "monto": 12000,
+      "tipo": "gasto",
+      "categoria": "Ingreso",
+      "descripcion": "Desayuno (Caldo De Costilla)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 48,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Yanet Envio Cotaxy)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 49,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Dolly (Pastillas)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 50,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Don Nestor R_Tato)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 51,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Deici)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 52,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Peinado)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 53,
+      "monto": 13600,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Fabio)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 54,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Jhefry (Recoger )",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 55,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Jhefry (Pantallas)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 56,
+      "monto": 17500,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Cena (Hot Dog)",
+      "fecha": "2026-10-21"
+    },
+    {
+      "id": 57,
+      "monto": 6000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Empanada & Jugo)",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 58,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Arturo Bueno)",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 59,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Don Nestor)",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 60,
+      "monto": 15000,
+      "tipo": "gasto",
+      "categoria": "Transporte",
+      "descripcion": "Parqueaderos",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 61,
+      "monto": 6000,
+      "tipo": "gasto",
+      "categoria": "Otros",
+      "descripcion": "Mecato",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 62,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Espectrometrías",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 63,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Pagos Banco De Bogota",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 64,
+      "monto": 8000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domi (Home Center)",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 65,
+      "monto": 14500,
+      "tipo": "gasto",
+      "categoria": "Otros",
+      "descripcion": "Ahorro",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 66,
+      "monto": 20000,
+      "tipo": "gasto",
+      "categoria": "Ropa",
+      "descripcion": "Jabon Aromatel",
+      "fecha": "2026-10-22"
+    },
+    {
+      "id": 67,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Don Nestor)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 68,
+      "monto": 12000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Quimicos)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 69,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilió (Carlos Rojas)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 70,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Junior)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 71,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilió (Deici)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 72,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilió  (Peinado)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 73,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilió (Don Nestor)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 74,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilió  (Yanet)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 75,
+      "monto": 20000,
+      "tipo": "gasto",
+      "categoria": "Deudas",
+      "descripcion": "Debia A Carlos Rojas",
+      "fecha": "2026-10-16"
+    },
+    {
+      "id": 76,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Cena (Papa_&_Empanada_con_Cafe)",
+      "fecha": "2026-10-23"
+    },
+    {
+      "id": 77,
+      "monto": 6000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Empanada & Jugo)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 78,
+      "monto": 30000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Ñema)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 79,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Rowan)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 80,
+      "monto": 10000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Don Manuel)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 81,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Don Nestor)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 82,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Espectrometría)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 83,
+      "monto": 20000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Don Nestor)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 84,
+      "monto": 15000,
+      "tipo": "ingreso",
+      "categoria": "Ingreso",
+      "descripcion": "Domicilio (Doña Imelda)",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 85,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Deudas",
+      "descripcion": "Datos Carol",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 86,
+      "monto": 4000,
+      "tipo": "gasto",
+      "categoria": "Ingreso",
+      "descripcion": "Empanada",
+      "fecha": "2026-10-24"
+    },
+    {
+      "id": 87,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Otros",
+      "descripcion": "Para Carol",
+      "fecha": "2026-10-25"
+    },
+    {
+      "id": 88,
+      "monto": 40000,
+      "tipo": "gasto",
+      "categoria": "Otros",
+      "descripcion": "Pedido De Temu",
+      "fecha": "2026-10-25"
+    },
+    {
+      "id": 89,
+      "monto": 16500,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Almuerzo",
+      "fecha": "2026-10-25"
+    },
+    {
+      "id": 90,
+      "monto": 7500,
+      "tipo": "gasto",
+      "categoria": "Salud",
+      "descripcion": "Crema De Dientes",
+      "fecha": "2026-10-25"
+    },
+    {
+      "id": 91,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Empanada & Proteina",
+      "fecha": "2026-10-25"
+    },
+    {
+      "id": 92,
+      "monto": 10000,
+      "tipo": "gasto",
+      "categoria": "Comida",
+      "descripcion": "Desayuno (Huevos Pan & Cafe Con Leche)",
+      "fecha": "2026-10-26"
+    }
+  ],
+  "recurrentes": [
+    {
+      "id": 1792083103908,
+      "nombre": "arriendo",
+      "monto": 300000,
+      "categoria": "Hogar",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-11-06"
+    },
+    {
+      "id": 1792107610783,
+      "nombre": "Cuota Moto",
+      "monto": 300000,
+      "categoria": "Transporte",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-11-06"
+    },
+    {
+      "id": 1792107647343,
+      "nombre": "Cuota Banco",
+      "monto": 500000,
+      "categoria": "Deudas",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-11-25"
+    },
+    {
+      "id": 1792117883017,
+      "nombre": "Datos",
+      "monto": 35000,
+      "categoria": "Servicios",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-10-25"
+    },
+    {
+      "id": 1792117925937,
+      "nombre": "Transporte",
+      "monto": 130000,
+      "categoria": "Transporte",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-11-06"
+    },
+    {
+      "id": 1792117966705,
+      "nombre": "Ropa",
+      "monto": 170000,
+      "categoria": "Ropa",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-11-01"
+    },
+    {
+      "id": 1792428928641,
+      "nombre": "Pago Lunmi",
+      "monto": 73000,
+      "categoria": "Educación",
+      "frecuencia": "monthly",
+      "proximaFecha": "2026-11-08"
+    }
+  ],
+  "config": {
+    "porcentaje_alerta_diaria": 50,
+    "porcentaje_alerta_semanal": 40,
+    "limites_categoria": {
+      "Comida": 59,
+      "Transporte": 50,
+      "Servicios": 70,
+      "Educación": 60,
+      "Entretenimiento": 55,
+      "Salud": 65,
+      "Ropa": 50,
+      "Mascotas": 50,
+      "Hogar": 60,
+      "Deudas": 70,
+      "Otros": 40
+    },
+    "fecha_inicio_control": "2026-10-15"
+  },
+  "alerts": [],
+  "notifications": [
+    {
+      "id": 1793033614530,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Huevos Pan & Cafe Con Leche) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-26T16:53:34.502Z",
+      "leida": false
+    },
+    {
+      "id": 1793033464030,
+      "title": "Movimiento registrado",
+      "message": "Gasto: d · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-26T16:51:04.007Z",
+      "leida": false
+    },
+    {
+      "id": 1792976687984,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Empanada & Proteina · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-26T01:04:47.702Z",
+      "leida": false
+    },
+    {
+      "id": 1792959489515,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Crema De Dientes · $ 7.500.",
+      "type": "success",
+      "fecha": "2026-10-25T20:18:09.028Z",
+      "leida": false
+    },
+    {
+      "id": 1792959469010,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Almuerzo · $ 16.500.",
+      "type": "success",
+      "fecha": "2026-10-25T20:17:48.444Z",
+      "leida": false
+    },
+    {
+      "id": 1792957396812,
+      "title": "Movimiento eliminado",
+      "message": "ff · $ 500.000.",
+      "type": "warning",
+      "fecha": "2026-10-25T19:43:16.078Z",
+      "leida": false
+    },
+    {
+      "id": 1792957373054,
+      "title": "Movimiento registrado",
+      "message": "Gasto: ff · $ 500.000.",
+      "type": "success",
+      "fecha": "2026-10-25T19:42:52.083Z",
+      "leida": false
+    },
+    {
+      "id": 1792957308034,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Almuerzo · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-25T19:41:47.036Z",
+      "leida": false
+    },
+    {
+      "id": 1792957297356,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Pedido De Temu · $ 40.000.",
+      "type": "success",
+      "fecha": "2026-10-25T19:41:36.522Z",
+      "leida": false
+    },
+    {
+      "id": 1792953739467,
+      "title": "Aporte de ahorro registrado",
+      "message": "Se añadió un aporte a una de tus metas.",
+      "type": "success",
+      "fecha": "2026-10-25T18:42:18.838Z",
+      "leida": false
+    },
+    {
+      "id": 1792953690784,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Para Carol · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:41:30.629Z",
+      "leida": false
+    },
+    {
+      "id": 1792953642749,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Empanada · $ 4.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:40:41.834Z",
+      "leida": false
+    },
+    {
+      "id": 1792953625105,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Datos Carol · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:40:24.128Z",
+      "leida": false
+    },
+    {
+      "id": 1792953588049,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Doña Imelda) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:39:47.198Z",
+      "leida": false
+    },
+    {
+      "id": 1792953559936,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Don Nestor) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:39:19.157Z",
+      "leida": false
+    },
+    {
+      "id": 1792953548793,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: f · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:39:08.320Z",
+      "leida": false
+    },
+    {
+      "id": 1792953524560,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Ñema) · $ 30.000.",
+      "type": "success",
+      "fecha": "2026-10-25T18:38:44.529Z",
+      "leida": false
+    },
+    {
+      "id": 1792871893856,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Espectrometría) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-24T19:58:12.883Z",
+      "leida": false
+    },
+    {
+      "id": 1792871870461,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Don Nestor) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-24T19:57:49.731Z",
+      "leida": false
+    },
+    {
+      "id": 1792858337795,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Don Manuel) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-24T16:12:17.586Z",
+      "leida": false
+    },
+    {
+      "id": 1792858322851,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Rowan) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-24T16:12:02.259Z",
+      "leida": false
+    },
+    {
+      "id": 1792858310080,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Ñema) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-24T16:11:49.638Z",
+      "leida": false
+    },
+    {
+      "id": 1792858277682,
+      "title": "Aporte de ahorro registrado",
+      "message": "Se añadió un aporte a una de tus metas.",
+      "type": "success",
+      "fecha": "2026-10-24T16:11:17.181Z",
+      "leida": false
+    },
+    {
+      "id": 1792858257176,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Empanada & Jugo) · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-24T16:10:56.615Z",
+      "leida": false
+    },
+    {
+      "id": 1792858239902,
+      "title": "Movimiento registrado",
+      "message": "Gasto: De · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-24T16:10:39.125Z",
+      "leida": false
+    },
+    {
+      "id": 1792858228544,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Cena (Papa_&_Empanada_con_Cafe) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-24T16:10:27.868Z",
+      "leida": false
+    },
+    {
+      "id": 1792798091533,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Debia A Carlos Rojas · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:28:11.411Z",
+      "leida": false
+    },
+    {
+      "id": 1792798033392,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilió  (Yanet) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:27:12.847Z",
+      "leida": false
+    },
+    {
+      "id": 1792798018323,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilió (Don Nestor) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:26:57.801Z",
+      "leida": false
+    },
+    {
+      "id": 1792798005640,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilió  (Peinado) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:26:45.331Z",
+      "leida": false
+    },
+    {
+      "id": 1792797987319,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilió (Deici) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:26:26.418Z",
+      "leida": false
+    },
+    {
+      "id": 1792797962545,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Junior) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:26:01.986Z",
+      "leida": false
+    },
+    {
+      "id": 1792797945141,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilió (Carlos Rojas) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-23T23:25:44.685Z",
+      "leida": false
+    },
+    {
+      "id": 1792771844416,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Quimicos) · $ 12.000.",
+      "type": "success",
+      "fecha": "2026-10-23T16:10:43.497Z",
+      "leida": false
+    },
+    {
+      "id": 1792771822723,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Don Nestor) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-23T16:10:22.152Z",
+      "leida": false
+    },
+    {
+      "id": 1792771802313,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Mecato · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-23T16:10:01.701Z",
+      "leida": false
+    },
+    {
+      "id": 1792771785057,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Ahorro · $ 14.500.",
+      "type": "success",
+      "fecha": "2026-10-23T16:09:44.120Z",
+      "leida": false
+    },
+    {
+      "id": 1792771769222,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Home Center) · $ 8.000.",
+      "type": "success",
+      "fecha": "2026-10-23T16:09:29.096Z",
+      "leida": false
+    },
+    {
+      "id": 1792724079474,
+      "title": "Aporte de ahorro registrado",
+      "message": "Se añadió un aporte a una de tus metas.",
+      "type": "success",
+      "fecha": "2026-10-23T02:54:38.728Z",
+      "leida": false
+    },
+    {
+      "id": 1792724068319,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Jabon Aromatel · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-23T02:54:27.839Z",
+      "leida": false
+    },
+    {
+      "id": 1792724034287,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Ahorro · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-23T02:53:54.139Z",
+      "leida": false
+    },
+    {
+      "id": 1792723995493,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Home Center) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-23T02:53:15.394Z",
+      "leida": false
+    },
+    {
+      "id": 1792703422515,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Pagos Banco De Bogota · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-22T21:10:21.804Z",
+      "leida": false
+    },
+    {
+      "id": 1792698926026,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Espectrometrías · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-22T19:55:25.370Z",
+      "leida": false
+    },
+    {
+      "id": 1792698856981,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Mecato · $ 5.000.",
+      "type": "success",
+      "fecha": "2026-10-22T19:54:16.202Z",
+      "leida": false
+    },
+    {
+      "id": 1792698828010,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Parqueaderos · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-22T19:53:47.015Z",
+      "leida": false
+    },
+    {
+      "id": 1792684260810,
+      "title": "Aporte de ahorro registrado",
+      "message": "Se añadió un aporte a una de tus metas.",
+      "type": "success",
+      "fecha": "2026-10-22T15:50:59.918Z",
+      "leida": false
+    },
+    {
+      "id": 1792684247959,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Empanada & Jugo) · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-22T15:50:47.868Z",
+      "leida": false
+    },
+    {
+      "id": 1792684226574,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Don Nestor) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-22T15:50:26.108Z",
+      "leida": false
+    },
+    {
+      "id": 1792684210272,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Arturo Bueno) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-22T15:50:09.736Z",
+      "leida": false
+    },
+    {
+      "id": 1792684187507,
+      "title": "Movimiento registrado",
+      "message": "Gasto: des · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-22T15:49:46.953Z",
+      "leida": false
+    },
+    {
+      "id": 1792644611206,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Cena (Hot Dog) · $ 17.500.",
+      "type": "success",
+      "fecha": "2026-10-22T04:50:10.209Z",
+      "leida": false
+    },
+    {
+      "id": 1792644562176,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Jhefry (Pantallas) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-22T04:49:21.223Z",
+      "leida": false
+    },
+    {
+      "id": 1792644541037,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Jhefry (Recoger ) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-22T04:49:01.021Z",
+      "leida": false
+    },
+    {
+      "id": 1792644512528,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Fabio) · $ 13.600.",
+      "type": "success",
+      "fecha": "2026-10-22T04:48:32.175Z",
+      "leida": false
+    },
+    {
+      "id": 1792644495108,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Peinado) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-22T04:48:15.013Z",
+      "leida": false
+    },
+    {
+      "id": 1792644477365,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Deici) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-22T04:47:56.966Z",
+      "leida": false
+    },
+    {
+      "id": 1792616972406,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Don Nestor R_Tato) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-21T21:09:31.900Z",
+      "leida": false
+    },
+    {
+      "id": 1792616930068,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Dolly (Pastillas) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-21T21:08:49.317Z",
+      "leida": false
+    },
+    {
+      "id": 1792616899740,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Yanet Envio Cotaxy) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-21T21:08:19.661Z",
+      "leida": false
+    },
+    {
+      "id": 1792598703365,
+      "title": "Meta de ahorro creada",
+      "message": "Nueva meta quedó registrada.",
+      "type": "success",
+      "fecha": "2026-10-21T16:05:03.323Z",
+      "leida": false
+    },
+    {
+      "id": 1792598356213,
+      "title": "Presupuestos actualizados",
+      "message": "Se guardaron los límites mensuales y por categoría.",
+      "type": "success",
+      "fecha": "2026-10-21T15:59:15.400Z",
+      "leida": false
+    },
+    {
+      "id": 1792593919286,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Caldo De Costilla) · $ 12.000.",
+      "type": "success",
+      "fecha": "2026-10-21T14:45:18.820Z",
+      "leida": true
+    },
+    {
+      "id": 1792555519234,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Cena (Una Papa) · $ 4.000.",
+      "type": "success",
+      "fecha": "2026-10-21T04:05:18.724Z",
+      "leida": true
+    },
+    {
+      "id": 1792538928718,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Junior) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-20T23:28:47.880Z",
+      "leida": true
+    },
+    {
+      "id": 1792538912289,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Peinado) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-20T23:28:31.729Z",
+      "leida": true
+    },
+    {
+      "id": 1792532032227,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Retiro Cajero Jhefry · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-20T21:33:51.541Z",
+      "leida": true
+    },
+    {
+      "id": 1792531988621,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Cadena Venegiros) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-20T21:33:08.056Z",
+      "leida": true
+    },
+    {
+      "id": 1792525630040,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Diamantes (Free Fire) · $ 8.400.",
+      "type": "success",
+      "fecha": "2026-10-20T19:47:09.448Z",
+      "leida": true
+    },
+    {
+      "id": 1792525619496,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Diamantes (Free Fire) · $ 8.400.",
+      "type": "success",
+      "fecha": "2026-10-20T19:46:58.746Z",
+      "leida": true
+    },
+    {
+      "id": 1792511551090,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Empanada & Jugo) · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-20T15:52:30.665Z",
+      "leida": true
+    },
+    {
+      "id": 1792507540664,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Cena (Empanadas) · $ 6.000.",
+      "type": "success",
+      "fecha": "2026-10-20T14:45:40.372Z",
+      "leida": true
+    },
+    {
+      "id": 1792507499155,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Peinado) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-20T14:44:58.974Z",
+      "leida": true
+    },
+    {
+      "id": 1792507480816,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Coopetran Terminal) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-20T14:44:40.531Z",
+      "leida": true
+    },
+    {
+      "id": 1792507452720,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Junior (Domis) · $ 35.000.",
+      "type": "success",
+      "fecha": "2026-10-20T14:44:12.591Z",
+      "leida": true
+    },
+    {
+      "id": 1792444333451,
+      "title": "Presupuestos actualizados",
+      "message": "Se guardaron los límites mensuales y por categoría.",
+      "type": "success",
+      "fecha": "2026-10-19T21:12:12.926Z",
+      "leida": true
+    },
+    {
+      "id": 1792444216052,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domi (Pilar Gratamira) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-19T21:10:15.415Z",
+      "leida": true
+    },
+    {
+      "id": 1792438510925,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Junior (Domis) · $ 55.000.",
+      "type": "success",
+      "fecha": "2026-10-19T19:35:10.782Z",
+      "leida": true
+    },
+    {
+      "id": 1792428929193,
+      "title": "Gasto recurrente programado",
+      "message": "Pago Lunmi · $ 73.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:55:28.645Z",
+      "leida": true
+    },
+    {
+      "id": 1792428873586,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Cristian Caja) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:54:33.167Z",
+      "leida": true
+    },
+    {
+      "id": 1792428846122,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Dimicilio (Prima Documentos) · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:54:05.176Z",
+      "leida": true
+    },
+    {
+      "id": 1792428768479,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Pedido Temu · $ 30.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:52:47.795Z",
+      "leida": true
+    },
+    {
+      "id": 1792428246991,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Empanada Jugo) · $ 6.500.",
+      "type": "success",
+      "fecha": "2026-10-19T16:44:06.063Z",
+      "leida": true
+    },
+    {
+      "id": 1792428105181,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Prexxa · $ 300.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:41:45.165Z",
+      "leida": true
+    },
+    {
+      "id": 1792427672350,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Cuota Banco · $ 270.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:34:31.895Z",
+      "leida": true
+    },
+    {
+      "id": 1792427622736,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Prexxa · $ 300.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:33:42.244Z",
+      "leida": true
+    },
+    {
+      "id": 1792427600364,
+      "title": "Gasto recurrente registrado",
+      "message": "Cuota Banco · $ 500.000.",
+      "type": "success",
+      "fecha": "2026-10-19T16:33:19.554Z",
+      "leida": true
+    },
+    {
+      "id": 1792377084781,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Ayuda Prima · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-19T02:31:24.089Z",
+      "leida": true
+    },
+    {
+      "id": 1792377074889,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Ayuda Prima · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-19T02:31:14.361Z",
+      "leida": true
+    },
+    {
+      "id": 1792377031282,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Ayuda Mama · $ 40.000.",
+      "type": "success",
+      "fecha": "2026-10-19T02:30:30.678Z",
+      "leida": true
+    },
+    {
+      "id": 1792266193755,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Pago Cuota Jairo) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-17T19:43:13.389Z",
+      "leida": true
+    },
+    {
+      "id": 1792266167580,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: f · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-17T19:42:46.755Z",
+      "leida": true
+    },
+    {
+      "id": 1792253399828,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio (Consignación Banco Bogota Angie) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-17T16:09:59.458Z",
+      "leida": true
+    },
+    {
+      "id": 1792253343831,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Huevos Pan & Cafe Con Leche) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-17T16:09:03.222Z",
+      "leida": true
+    },
+    {
+      "id": 1792253326417,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Cena (Sopita & Castillas De Cerdo ) · $ 15.000.",
+      "type": "success",
+      "fecha": "2026-10-17T16:08:45.708Z",
+      "leida": true
+    },
+    {
+      "id": 1792199253082,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Domicilio Cristian · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-17T01:07:32.493Z",
+      "leida": true
+    },
+    {
+      "id": 1792199232758,
+      "title": "Movimiento registrado",
+      "message": "Ingreso: Compensación · $ 20.000.",
+      "type": "success",
+      "fecha": "2026-10-17T01:07:11.887Z",
+      "leida": true
+    },
+    {
+      "id": 1792171540785,
+      "title": "Presupuestos actualizados",
+      "message": "Se guardaron los límites mensuales y por categoría.",
+      "type": "success",
+      "fecha": "2026-10-16T17:25:39.853Z",
+      "leida": true
+    },
+    {
+      "id": 1792169052935,
+      "title": "Movimiento registrado",
+      "message": "Gasto: Desayuno (Huevos Pan & Cafe Con Leche) · $ 10.000.",
+      "type": "success",
+      "fecha": "2026-10-16T16:44:12.725Z",
+      "leida": true
+    },
+    {
+      "id": 1792117967056,
+      "title": "Gasto recurrente programado",
+      "message": "Ropa · $ 170.000.",
+      "type": "success",
+      "fecha": "2026-10-16T02:32:46.707Z",
+      "leida": true
+    }
+  ],
+  "presupuestos": {
+    "mensual": 1600000,
+    "categorias": {
+      "Comida": 300000,
+      "Transporte": 150000,
+      "Servicios": 0,
+      "Educación": 30000,
+      "Entretenimiento": 30000,
+      "Salud": 0,
+      "Ropa": 110000,
+      "Mascotas": 0,
+      "Hogar": 0,
+      "Deudas": 700000,
+      "Otros": 100000
+    }
+  },
+  "metas": [
+    {
+      "id": 1792598703321,
+      "nombre": "Ahorro Semanal",
+      "objetivo": 50000,
+      "ahorrado": 27000,
+      "fecha": "2026-11-30",
+      "aportes": [
+        {
+          "monto": 7500,
+          "fecha": "2026-10-22",
+          "tipo": "aporte"
+        },
+        {
+          "monto": 14500,
+          "fecha": "2026-10-22",
+          "tipo": "aporte"
+        },
+        {
+          "monto": 2000,
+          "fecha": "2026-10-24",
+          "tipo": "aporte"
+        },
+        {
+          "monto": 3000,
+          "fecha": "2026-10-25",
+          "tipo": "aporte"
+        }
+      ]
+    }
+  ],
+  "cierres": []
+}
