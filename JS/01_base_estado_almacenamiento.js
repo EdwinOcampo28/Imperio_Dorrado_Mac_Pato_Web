@@ -60,6 +60,7 @@ const state={
     }
     ,
     metas:[],
+    pendientes:[],
     cierres:[],
     view:'dashboard',
     report:'daily',
@@ -70,13 +71,9 @@ const state={
 const STORE_KEY='gestor_gastos_edwin_v1';
 const TRACKING_START_DEFAULT='2026-10-15';
 const DEFAULT_CONFIG={
-    ...(window.GESTOR_INITIAL?.config||{
-        porcentaje_alerta_diaria:50,
-        porcentaje_alerta_semanal:40,
-        limites_categoria:{
-        }
-    }
-    ),
+    limite_diario:0,
+    limite_semanal:0,
+    limites_categoria_mensuales:{},
     fecha_inicio_control:TRACKING_START_DEFAULT
 }
 ;
@@ -149,6 +146,7 @@ function defaultStore(){
         }
         ,
         metas:[],
+        pendientes:[],
         cierres:[]
     }
 }
@@ -175,6 +173,10 @@ function readStore(){
             }
         }
         ;
+        config.limites_categoria_mensuales={
+            ...(baseConfig.limites_categoria_mensuales||{}),
+            ...(savedConfig.limites_categoria_mensuales||{})
+        };
         return {
             ...fallback,
             ...x,
@@ -204,6 +206,7 @@ function readStore(){
             }
             ,
             metas:Array.isArray(x.metas)?x.metas:[],
+            pendientes:Array.isArray(x.pendientes)?x.pendientes:[],
             cierres:Array.isArray(x.cierres)?x.cierres:[]
         }
         ;
@@ -232,10 +235,14 @@ if(!hadTrackingStart){
     }
 }
 function persist(){
+    const serialized=JSON.stringify(localDB);
+    if(typeof databaseModeEnabled==='function'&&databaseModeEnabled()&&typeof databaseReady!=='undefined'&&databaseReady){
+        if(typeof queueDatabaseSave==='function')queueDatabaseSave(serialized);
+        return
+    }
     safeSet(STORE_KEY,
-    JSON.stringify(localDB))
-}
-function trackingStart(){
+    serialized)
+}function trackingStart(){
     return /^\d{4}-\d{2}-\d{2}$/.test(String(localDB.config?.fecha_inicio_control||''))?localDB.config.fecha_inicio_control:todayISO()
 }
 function isCountedMovement(g,
@@ -251,7 +258,7 @@ function startOfWeek(d){
     const x=new Date(d.getFullYear(),
     d.getMonth(),
     d.getDate());
-    x.setDate(x.getDate()-6);
+    x.setDate(x.getDate()-((x.getDay()+6)%7));
     return x
 }
 function iso(d){

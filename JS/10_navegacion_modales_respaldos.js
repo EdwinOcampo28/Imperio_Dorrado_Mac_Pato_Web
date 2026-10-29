@@ -12,9 +12,8 @@ function switchView(view){
         'monthly-close':'Cierre mensual',
         budgets:'Presupuestos',
         goals:'Metas de ahorro',
-        alerts:'Alertas',
+        alerts:'Límites y alertas',
         notifications:'Notificaciones',
-        limits:'Límites',
         profile:'Mi perfil'
     }
     ;
@@ -28,6 +27,7 @@ function switchView(view){
     }
     if(view==='budgets')renderBudgets();
     if(view==='goals')renderGoals();
+    if(view==='alerts'){renderSettings();renderAlerts()}
     if(view==='profile')renderProfile();
     if(view==='notifications')renderNotifications();
     if(view==='monthly-close')renderMonthlyClose();
@@ -109,6 +109,7 @@ function backup(){
         notifications:localDB.notifications||[],
         presupuestos:state.presupuestos,
         metas:state.metas,
+        pendientes:state.pendientes||[],
         cierres:state.cierres
     }
     ,

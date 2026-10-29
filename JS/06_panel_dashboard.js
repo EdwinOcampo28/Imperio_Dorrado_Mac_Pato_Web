@@ -86,5 +86,6 @@ function renderLimits(d){
     const pct=(a,
     b)=>b>0?Math.min(100,
     a/b*100):0;
-    $('#limitSummary').innerHTML=`<div class="limit-item"><div class="limit-info"><span>Gasto de hoy</span><b>${money(today)} / ${money(daily)}</b></div><div class="limit-track"><div class="limit-fill ${today>daily&&daily>0?'warning':''}" style="width:${pct(today,daily)}%"></div></div><div class="limit-caption"><span>Promedio diario como referencia</span><b>${Math.round(pct(today,daily))}%</b></div></div><div class="limit-item"><div class="limit-info"><span>Gasto esta semana</span><b>${money(week)} / ${money(weekly)}</b></div><div class="limit-track"><div class="limit-fill ${week>weekly&&weekly>0?'warning':''}" style="width:${pct(week,weekly)}%"></div></div><div class="limit-caption"><span>Promedio semanal como referencia</span><b>${Math.round(pct(week,weekly))}%</b></div></div>`
+    const bar=(label,used,limit,period)=>`<div class="limit-item"><div class="limit-info"><span>${label}</span><b>${money(used)} / ${limit>0?money(limit):'Sin tope'}</b></div><div class="limit-track"><div class="limit-fill ${used>limit&&limit>0?'warning':''}" style="width:${pct(used,limit)}%"></div></div><div class="limit-caption"><span>${limit>0?(used>limit?`Superado por ${money(used-limit)}`:`Disponible ${money(limit-used)}`):'Configura un tope para recibir avisos'}</span><b>${limit>0?`${Math.round(used/limit*100)}%`:'—'}</b></div></div>`;
+    $('#limitSummary').innerHTML=bar('Gasto de hoy',today,daily,'hoy')+bar('Gasto esta semana',week,weekly,'esta semana')
 }

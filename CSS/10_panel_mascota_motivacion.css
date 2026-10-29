@@ -289,7 +289,7 @@ body[data-theme] .table-scroll table tbody tr:hover {
     height:42px;
     flex:0 0 42px;
     margin-left:auto;
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.96
 }
 .brand-mark {
@@ -297,7 +297,7 @@ body[data-theme] .table-scroll table tbody tr:hover {
     color:#1a2b32!important
 }
 .hero-art {
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     right:4%;
     top:8px;
     width:180px;
@@ -319,7 +319,7 @@ body[data-theme] .table-scroll table tbody tr:hover {
     bottom:7px;
     width:28px;
     height:28px;
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.13;
     pointer-events:none
 }
@@ -378,7 +378,7 @@ body[data-theme] {
     bottom:3%;
     width:min(25vw,280px);
     height:min(25vw,280px);
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.075;
     pointer-events:none;
     filter:drop-shadow(0 8px 14px #000)
@@ -451,7 +451,7 @@ label {
     top:12px;
     width:54px;
     height:54px;
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.09;
     pointer-events:none
 }
@@ -479,7 +479,7 @@ label {
     bottom:6px;
     width:38px;
     height:38px;
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.16;
     pointer-events:none
 }
@@ -551,7 +551,7 @@ textarea::placeholder {
     bottom:-32px;
     width:150px;
     height:150px;
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.11;
     pointer-events:none
 }
@@ -561,7 +561,7 @@ textarea::placeholder {
     flex-basis:48px
 }
 .hero-art {
-    background-image:url("pato-empresario.svg")!important;
+    background-image:url("../Assets/pato-empresario.svg")!important;
     filter:drop-shadow(0 8px 10px #0005)
 }
 /* Decorative mascot/coins never block text or clicks. */
@@ -611,7 +611,7 @@ textarea::placeholder {
     top:-46px;
     width:160px;
     height:160px;
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.13;
     pointer-events:none
 }
@@ -664,12 +664,12 @@ textarea::placeholder {
     top:88px;
     width:clamp(95px,12vw,170px);
     height:clamp(95px,12vw,170px);
-    background:url("pato-empresario.svg") center/contain no-repeat;
+    background:url("../Assets/pato-empresario.svg") center/contain no-repeat;
     opacity:.055;
     pointer-events:none
 }
 .panel:after {
-    background-image:url("pato-empresario.svg"),
+    background-image:url("../Assets/pato-empresario.svg"),
     radial-gradient(circle,#f5c64e 0 18%,transparent 20%);
     background-size:contain,
     18px 18px;

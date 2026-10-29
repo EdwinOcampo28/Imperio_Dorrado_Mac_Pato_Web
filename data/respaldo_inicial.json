@@ -1,7 +1,4 @@
 {
-  "app": "Gestor de Gastos - Edwin Ocampo",
-  "version": 6,
-  "exportado": "2026-10-26T17:03:39.244Z",
   "gastos": [
     {
       "id": 1,
@@ -798,25 +795,6 @@
       "proximaFecha": "2026-11-08"
     }
   ],
-  "config": {
-    "porcentaje_alerta_diaria": 50,
-    "porcentaje_alerta_semanal": 40,
-    "limites_categoria": {
-      "Comida": 59,
-      "Transporte": 50,
-      "Servicios": 70,
-      "Educación": 60,
-      "Entretenimiento": 55,
-      "Salud": 65,
-      "Ropa": 50,
-      "Mascotas": 50,
-      "Hogar": 60,
-      "Deudas": 70,
-      "Otros": 40
-    },
-    "fecha_inicio_control": "2026-10-15"
-  },
-  "alerts": [],
   "notifications": [
     {
       "id": 1793033614530,
@@ -1619,22 +1597,7 @@
       "leida": true
     }
   ],
-  "presupuestos": {
-    "mensual": 1600000,
-    "categorias": {
-      "Comida": 300000,
-      "Transporte": 150000,
-      "Servicios": 0,
-      "Educación": 30000,
-      "Entretenimiento": 30000,
-      "Salud": 0,
-      "Ropa": 110000,
-      "Mascotas": 0,
-      "Hogar": 0,
-      "Deudas": 700000,
-      "Otros": 100000
-    }
-  },
+  "alerts": [],
   "metas": [
     {
       "id": 1792598703321,
@@ -1666,5 +1629,40 @@
       ]
     }
   ],
-  "cierres": []
+  "pendientes": [],
+  "cierres": [],
+  "config": {
+    "porcentaje_alerta_diaria": 50,
+    "porcentaje_alerta_semanal": 40,
+    "limites_categoria": {
+      "Comida": 59,
+      "Transporte": 50,
+      "Servicios": 70,
+      "Educación": 60,
+      "Entretenimiento": 55,
+      "Salud": 65,
+      "Ropa": 50,
+      "Mascotas": 50,
+      "Hogar": 60,
+      "Deudas": 70,
+      "Otros": 40
+    },
+    "fecha_inicio_control": "2026-10-15"
+  },
+  "presupuestos": {
+    "mensual": 1600000.0,
+    "categorias": {
+      "Comida": 300000,
+      "Transporte": 150000,
+      "Servicios": 0,
+      "Educación": 30000,
+      "Entretenimiento": 30000,
+      "Salud": 0,
+      "Ropa": 110000,
+      "Mascotas": 0,
+      "Hogar": 0,
+      "Deudas": 700000,
+      "Otros": 100000
+    }
+  }
 }

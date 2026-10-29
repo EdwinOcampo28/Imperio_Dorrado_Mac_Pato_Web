@@ -7,6 +7,7 @@ function setData(data){
     if(data.dashboard)state.dashboard=data.dashboard;
     if(data.presupuestos)state.presupuestos=data.presupuestos;
     if(data.metas)state.metas=data.metas;
+    if(data.pendientes)state.pendientes=data.pendientes;
     if(data.cierres)state.cierres=data.cierres;
 }
 async function refresh(){
@@ -23,7 +24,7 @@ function renderAll(){
     renderBudgets();
     renderGoals();
     renderMonthlyClose();
-    $('#alertBadge').textContent=state.alerts.length;
+    $('#alertBadge').textContent=activeAlerts().length;
     updateNotificationBadge();
-    $('#alertsCountHead').textContent=`${state.alerts.length} ${state.alerts.length===1?'alerta':'alertas'}`
+    $('#alertsCountHead').textContent=`${activeAlerts().length} ${activeAlerts().length===1?'alerta':'alertas'}`
 }

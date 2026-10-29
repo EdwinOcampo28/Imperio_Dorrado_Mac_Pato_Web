@@ -10,7 +10,7 @@ async function deleteAllFinancialData(){
     backup();
     const proceed=await showConfirm({
         title:'¿Eliminar todos los datos?',
-        message:'Guarda el archivo descargado en una carpeta segura. Esta acción eliminará los movimientos, alertas, presupuestos, metas y cierres mensuales. Tu usuario y contraseña se conservarán.',
+        message:'Guarda el archivo descargado en una carpeta segura. Esta acción eliminará los movimientos, alertas, presupuestos, metas, saldos pendientes y cierres mensuales. Tu usuario y contraseña se conservarán.',
         confirmText:'Sí, eliminar datos',
         tone:'danger'
     }
@@ -30,6 +30,7 @@ async function deleteAllFinancialData(){
     }
     ;
     localDB.metas=[];
+    localDB.pendientes=[];
     localDB.cierres=[];
     persist();
     refresh().then(()=>{

@@ -50,7 +50,7 @@
     border-radius:20px;
     display:grid;
     place-items:center;
-    background:#17313b url("pato-empresario.svg") center / contain no-repeat;
+    background:#17313b url("../Assets/pato-empresario.svg") center / contain no-repeat;
     border:1px solid #8d6544;
     color:transparent;
     font-size:0;
@@ -128,7 +128,7 @@
     border: none !important;
     box-shadow: none !important;
     background-color: transparent !important;
-    background-image: url("pato-empresario.svg") !important;
+    background-image: url("../Assets/pato-empresario.svg") !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;

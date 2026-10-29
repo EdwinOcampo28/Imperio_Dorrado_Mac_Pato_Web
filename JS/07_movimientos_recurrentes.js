@@ -3,7 +3,7 @@ function renderRecurrentes(){
     const today=todayISO();
     const due=items.filter(r=>r.proximaFecha<=today);
     $('#recurringDueCount').textContent=`${due.length} ${due.length===1?'PENDIENTE':'PENDIENTES'}`;
-    const cats=[...new Set([...state.categories,
+    const cats=[...new Set([...state.categories,...items.map(r=>r.categoria),
     'Comida',
     'Transporte',
     'Hogar',
@@ -15,12 +15,40 @@ function renderRecurrentes(){
     $('#recurringCategory').innerHTML=cats.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');
     $('#recurringNextDate').value=$('#recurringNextDate').value||today;
     $('#recurringList').innerHTML=items.length?items.slice().sort((a,
-    b)=>a.proximaFecha.localeCompare(b.proximaFecha)).map(r=>`<article class="recurring-item ${r.proximaFecha<=today?'is-due':''}"><div><b>${esc(r.nombre)}</b><small>${esc(r.categoria)} · ${r.frecuencia==='weekly'?'Semanal':r.frecuencia==='yearly'?'Anual':'Mensual'} · Próximo: ${fmtDate(r.proximaFecha)}</small></div><strong>${money(r.monto)}</strong><div class="recurring-item-actions"><button class="btn btn-primary" type="button" data-recurring-register="${r.id}">${r.proximaFecha<=today?'Registrar ahora':'Registrar gasto'}</button><button class="btn btn-outline" type="button" data-recurring-delete="${r.id}" aria-label="Eliminar gasto recurrente">Eliminar</button></div></article>`).join(''):'<p class="muted-small">Todavía no tienes gastos recurrentes programados.</p>';
+    b)=>a.proximaFecha.localeCompare(b.proximaFecha)).map(r=>`<article class="recurring-item ${r.proximaFecha<=today?'is-due':''}"><div><b>${esc(r.nombre)}</b><small>${esc(r.categoria)} · ${r.frecuencia==='biweekly'?'Quincenal':r.frecuencia==='weekly'||r.frecuencia==='yearly'?'Frecuencia anterior':'Mensual'} · Próximo: ${fmtDate(r.proximaFecha)}</small></div><strong>${money(r.monto)}</strong><div class="recurring-item-actions"><button class="btn btn-outline" type="button" data-recurring-edit="${r.id}" aria-label="Editar ${esc(r.nombre)}">✎ Editar</button><button class="btn btn-primary" type="button" data-recurring-register="${r.id}">${r.proximaFecha<=today?'Registrar ahora':'Registrar gasto'}</button><button class="btn btn-soft" type="button" data-recurring-delete="${r.id}" aria-label="Eliminar gasto recurrente">Eliminar</button></div></article>`).join(''):'<p class="muted-small">Todavía no tienes gastos recurrentes programados.</p>';
+}
+function resetRecurringForm(){
+    const form=$('#recurringForm');
+    if(!form)return;
+    form.reset();
+    $('#recurringId').value='';
+    $('#recurringNextDate').value=todayISO();
+    $('#recurringSubmit').textContent='＋ Programar gasto';
+    $('#cancelRecurringEdit').hidden=true;
+    $('#recurringFormMode').textContent='NUEVO PAGO';
+    form.classList.remove('is-editing');
+}
+function editRecurringItem(id){
+    const item=(localDB.recurrentes||[]).find(r=>String(r.id)===String(id));
+    if(!item)return;
+    $('#recurringId').value=item.id;
+    $('#recurringName').value=item.nombre;
+    $('#recurringAmount').value=item.monto;
+    $('#recurringCategory').value=item.categoria;
+    $('#recurringFrequency').value=item.frecuencia||'monthly';
+    $('#recurringNextDate').value=item.proximaFecha;
+    $('#recurringSubmit').textContent='Guardar cambios';
+    $('#cancelRecurringEdit').hidden=false;
+    $('#recurringFormMode').textContent='EDITANDO PAGO';
+    $('#recurringForm').classList.add('is-editing');
+    $('#recurringForm').scrollIntoView({behavior:'smooth',block:'center'});
+    $('#recurringName').focus({preventScroll:true});
 }
 function nextRecurringDate(date,
 frequency){
     const d=new Date(date+'T12:00:00');
-    if(frequency==='weekly')d.setDate(d.getDate()+7);
+    if(frequency==='biweekly')d.setDate(d.getDate()+15);
+    else if(frequency==='weekly')d.setDate(d.getDate()+7);
     else if(frequency==='yearly')d.setFullYear(d.getFullYear()+1);
     else{
         const day=d.getDate();

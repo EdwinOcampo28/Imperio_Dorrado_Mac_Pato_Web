@@ -36,8 +36,8 @@ async function init(){
         $('#recurringForm').addEventListener('submit',
         e=>{
             e.preventDefault();
+            const editId=$('#recurringId').value;
             const item={
-                id:Date.now(),
                 nombre:$('#recurringName').value.trim(),
                 monto:Number($('#recurringAmount').value),
                 categoria:$('#recurringCategory').value,
@@ -51,21 +51,43 @@ async function init(){
                 return
             }
             localDB.recurrentes=Array.isArray(localDB.recurrentes)?localDB.recurrentes:[];
-            localDB.recurrentes.push(item);
+            if(editId){
+                const index=localDB.recurrentes.findIndex(r=>String(r.id)===editId);
+                if(index<0){
+                    toast('No encontré ese pago recurrente. Actualiza la lista e inténtalo de nuevo.','error');
+                    resetRecurringForm();
+                    return
+                }
+                item.id=localDB.recurrentes[index].id;
+                localDB.recurrentes[index]={...localDB.recurrentes[index],...item};
+            }else{
+                item.id=Date.now();
+                localDB.recurrentes.push(item);
+            }
             persist();
-            $('#recurringForm').reset();
-            $('#recurringNextDate').value=todayISO();
+            resetRecurringForm();
             renderRecurrentes();
-            logNotificationAction('Gasto recurrente programado',
-            `${item.nombre} · ${money(item.monto)}.`);
-            toast('Gasto recurrente programado.');
+            if(editId){
+                logNotificationAction('Pago recurrente actualizado',`${item.nombre} · ${money(item.monto)}.`);
+                toast('Cambios del pago recurrente guardados.');
+            }else{
+                logNotificationAction('Gasto recurrente programado',`${item.nombre} · ${money(item.monto)}.`);
+                toast('Gasto recurrente programado.');
+            }
         }
         );
+        $('#cancelRecurringEdit').addEventListener('click',resetRecurringForm);
         $('#recurringList').addEventListener('click',
         async e=>{
             const register=e.target.closest('[data-recurring-register]'),
+            edit=e.target.closest('[data-recurring-edit]'),
             del=e.target.closest('[data-recurring-delete]');
+            if(edit){
+                editRecurringItem(edit.dataset.recurringEdit);
+                return
+            }
             if(del){
+                if($('#recurringId').value===del.dataset.recurringDelete)resetRecurringForm();
                 localDB.recurrentes=(localDB.recurrentes||[]).filter(r=>String(r.id)!==del.dataset.recurringDelete);
                 persist();
                 renderRecurrentes();
@@ -283,6 +305,15 @@ async function init(){
         );
         $('#goalsList').addEventListener('click',
         async e=>{
+            const contributions=e.target.closest('[data-goal-contributions]');
+            if(contributions){
+                const card=contributions.closest('.goal-card'),showAll=contributions.getAttribute('aria-expanded')!=='true';
+                card.querySelector('.contribution-top-three').hidden=showAll;
+                card.querySelector('.contribution-history').hidden=!showAll;
+                contributions.setAttribute('aria-expanded',String(showAll));
+                contributions.textContent=showAll?'Mostrar los 3 mayores':'Ver todos los aportes';
+                return
+            }
             const b=e.target.closest('[data-goal-delete]');
             if(!b)return;
             const goal=state.metas.find(g=>g.id===Number(b.dataset.goalDelete));
@@ -306,6 +337,26 @@ async function init(){
             }
         }
         );
+        $('#pendingForm').addEventListener('submit',async e=>{
+            e.preventDefault();
+            const persona=$('#pendingPerson').value.trim();
+            try{
+                const r=await api('/api/pending',{method:'POST',body:JSON.stringify({persona,monto:$('#pendingAmount').value,concepto:$('#pendingConcept').value,fecha:todayISO(),fechaVencimiento:$('#pendingDueDate').value,notas:$('#pendingNotes').value})});
+                state.pendientes=r.pendientes;$('#pendingForm').reset();renderPendingBalances();toast(`Saldo pendiente de ${persona} registrado por separado.`)
+            }catch(err){toast(err.message,'error')}
+        });
+        $('#pendingList').addEventListener('submit',async e=>{
+            const form=e.target.closest('[data-pending-payment]');if(!form)return;e.preventDefault();
+            try{const r=await api('/api/pending/'+form.dataset.pendingPayment,{method:'POST',body:JSON.stringify({abono:form.elements.abono.value})});state.pendientes=r.pendientes;renderPendingBalances();toast('Abono registrado. El saldo pendiente se actualizó.')}
+            catch(err){toast(err.message,'error')}
+        });
+        $('#pendingList').addEventListener('click',async e=>{
+            const button=e.target.closest('[data-pending-delete]');if(!button)return;
+            const item=state.pendientes.find(x=>Number(x.id)===Number(button.dataset.pendingDelete));
+            if(!item||!confirm(`¿Eliminar el saldo pendiente de ${item.persona}?`))return;
+            try{const r=await api('/api/pending/'+item.id,{method:'DELETE'});state.pendientes=r.pendientes;renderPendingBalances();toast('Saldo pendiente eliminado.')}
+            catch(err){toast(err.message,'error')}
+        });
         $('#alertsList').addEventListener('click',
         async e=>{
             const b=e.target.closest('[data-alert-delete]');
@@ -317,9 +368,9 @@ async function init(){
                 }
                 ));
                 renderAlerts();
-                $('#alertBadge').textContent=state.alerts.length;
+                $('#alertBadge').textContent=activeAlerts().length;
                 updateNotificationBadge();
-                $('#alertsCountHead').textContent=`${state.alerts.length} ${state.alerts.length===1?'alerta':'alertas'}`;
+                $('#alertsCountHead').textContent=`${activeAlerts().length} ${activeAlerts().length===1?'alerta':'alertas'}`;
                 toast('Alerta eliminada.')
             }
             catch(err){
@@ -334,15 +385,15 @@ async function init(){
             const limits={
             }
             ;
-            $$('[data-cat-limit]').forEach(i=>limits[i.dataset.catLimit]=Number(i.value));
+            $$('[data-cat-limit]').forEach(i=>limits[i.dataset.catLimit]=Number(i.value)||0);
             try{
                 const d=await api('/api/config',
                 {
                     method:'POST',
                     body:JSON.stringify({
-                        porcentaje_alerta_diaria:Number($('#dailyLimit').value),
-                        porcentaje_alerta_semanal:Number($('#weeklyLimit').value),
-                        limites_categoria:limits
+                        limite_diario:Number($('#dailyLimit').value)||0,
+                        limite_semanal:Number($('#weeklyLimit').value)||0,
+                        limites_categoria_mensuales:limits
                     }
                     )
                 }
@@ -350,8 +401,8 @@ async function init(){
                 state.config=d.config;
                 await refresh();
                 logNotificationAction('Límites actualizados',
-                'Se guardaron los límites diarios, semanales y por categoría.');
-                toast('Configuración guardada correctamente.')
+                'Se guardaron los topes en pesos y se revisó el gasto acumulado.');
+                toast(d.alerts_created?.length?`Límites guardados. Ya superaste ${d.alerts_created.length} tope(s); revisa las alertas.`:'Límites guardados y comprobados con tus gastos actuales.')
             }
             catch(err){
                 toast(err.message,
@@ -379,24 +430,8 @@ async function init(){
         }
         );
         $('#resetSettings').onclick=async()=>{
-            if(!confirm('¿Restablecer los límites de configuración iniciales?'))return;
-            const defaults={
-                porcentaje_alerta_diaria:50,
-                porcentaje_alerta_semanal:40,
-                limites_categoria:{
-                    'Comida':60,
-                    'Transporte':50,
-                    'Servicios':70,
-                    'Educación':60,
-                    'Entretenimiento':55,
-                    'Salud':65,
-                    'Ropa':50,
-                    'Mascotas':50,
-                    'Hogar':60,
-                    'Deudas':70,
-                    'Otros':40
-                }
-            }
+            if(!confirm('¿Apagar todos los topes configurados?'))return;
+            const defaults={limite_diario:0,limite_semanal:0,limites_categoria_mensuales:{}}
             ;
             try{
                 await api('/api/config',
@@ -406,7 +441,7 @@ async function init(){
                 }
                 );
                 await refresh();
-                toast('Límites originales restablecidos.')
+                toast('Se apagaron todos los topes.')
             }
             catch(e){
                 toast(e.message,
@@ -462,8 +497,10 @@ async function init(){
                 for(const key of ['alerts',
                 'notifications',
                 'metas',
+                'pendientes',
                 'cierres'])if(obj[key]!==undefined&&!Array.isArray(obj[key]))throw new Error(`El respaldo contiene una sección inválida: ${key}.`);
                 if(obj.recurrentes!==undefined&&(!Array.isArray(obj.recurrentes)||obj.recurrentes.some(r=>!r||!String(r.nombre||'').trim()||!(Number(r.monto)>0)||!/^\d{4}-\d{2}-\d{2}$/.test(String(r.proximaFecha||'')))))throw new Error('La lista de gastos recurrentes del respaldo no es válida.');
+                if(obj.pendientes!==undefined&&obj.pendientes.some(p=>!p||typeof p!=='object'||!String(p.persona||'').trim()||!(Number(p.monto)>0)||Number(p.abonado||0)<0||Number(p.abonado||0)>Number(p.monto)||p.pagos!==undefined&&!Array.isArray(p.pagos)))throw new Error('La lista de saldos pendientes del respaldo no es válida.');
                 if(!await showConfirm({
                     title:'Crear respaldo preventivo',
                     message:'Antes de reemplazar los datos, descarga una copia de seguridad de la información actual. Después podrás confirmar la restauración.',
@@ -490,6 +527,7 @@ async function init(){
                         notifications:obj.notifications,
                         presupuestos:obj.presupuestos,
                         metas:obj.metas,
+                        pendientes:obj.pendientes,
                         cierres:obj.cierres
                     }
                     )

@@ -76,7 +76,7 @@ function renderSpendingHabits(){
         r.previous)?Math.min(100,
         r.current/Math.max(r.current,
         r.previous)*100):0;
-        return `<article class="habit-category-row"><div class="habit-category-head"><b>${esc(r.name)}</b><span class="habit-change ${r.diff>0?'habits-increase':r.diff<0?'habits-decrease':''}">${r.previous===0?(r.current>0?'Nuevo gasto':'Sin cambio'):`${
+        return `<article class="habit-category-row"><div class="habit-category-head"><div class="habit-category-name"><span class="expense-icon habit-category-icon" aria-hidden="true">${catIcons[r.name]||'◇'}</span><b>${esc(r.name)}</b></div><span class="habit-change ${r.diff>0?'habits-increase':r.diff<0?'habits-decrease':''}">${r.previous===0?(r.current>0?'Nuevo gasto':'Sin cambio'):`${
             r.diff>0?'+':''
         }
         ${
@@ -94,7 +94,7 @@ function renderSpendingHabits(){
     const increases=rows.filter(r=>r.diff>0).sort((a,
     b)=>b.diff-a.diff).slice(0,
     4);
-    $('#habitsInsights').innerHTML=increases.length?increases.map(r=>`<div class="habit-insight"><span class="habit-insight-icon">↗</span><div><b>${esc(r.name)} aumentó ${money(r.diff)}</b><p>Pasó de ${money(r.previous)} en ${previousLabel} a ${money(r.current)} en ${currentLabel}.</p></div></div>`).join(''):'<div class="empty-state">No hay categorías con aumento frente al mes anterior. Si no hay datos previos, registra gastos de ambos meses para obtener una comparación más útil.</div>';
+    $('#habitsInsights').innerHTML=increases.length?increases.map(r=>`<div class="habit-insight"><span class="expense-icon habit-insight-icon" aria-hidden="true">${catIcons[r.name]||'◇'}</span><div><b>${esc(r.name)} aumentó ${money(r.diff)}</b><p>Pasó de ${money(r.previous)} en ${previousLabel} a ${money(r.current)} en ${currentLabel}.</p></div></div>`).join(''):'<div class="empty-state">No hay categorías con aumento frente al mes anterior. Si no hay datos previos, registra gastos de ambos meses para obtener una comparación más útil.</div>';
 }
 async function renderReport(){
     try{

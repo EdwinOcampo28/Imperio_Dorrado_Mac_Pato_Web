@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142b35">
+<title>Imperio Dorado | Índice HTML y JavaScript</title>
+<style>
+:root{color-scheme:dark;--bg:#0b171d;--surface:#142b35;--surface2:#1b343e;--line:#31505b;--ink:#f4f7f8;--muted:#b4c4ca;--gold:#f2c14e;--gold2:#ffe08a;--blue:#7cc8dc}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#18343e 0,var(--bg) 60%);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px}main{max-width:1000px;margin:auto}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.15em}h1{margin:6px 0 8px;font-size:clamp(26px,4vw,38px)}.intro{color:var(--muted);margin:0 0 24px}.group-title{margin:28px 0 12px;color:var(--gold2);font-size:18px}.cards{display:flex;flex-direction:column;gap:12px}.card{border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,var(--surface2),var(--surface));padding:16px 18px;box-shadow:0 8px 20px #0002}.card h3{margin:0 0 5px;font-size:16px;color:var(--ink)}.path{display:inline-block;color:var(--blue);font:13px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;margin:2px 0 7px}.card p{margin:0;color:var(--muted)}.note{border-left:4px solid var(--gold);padding:12px 15px;background:#192c31;border-radius:8px;margin-top:24px;color:#e9eff1}.tag{display:inline-block;color:#18242a;background:var(--gold);font-size:10px;font-weight:900;border-radius:5px;padding:2px 7px;margin-right:8px;vertical-align:2px}@media(min-width:900px){body{padding:36px}}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">DOCUMENTACIÓN DEL PROYECTO</div>
+<h1>Imperio Dorado · Índice HTML y JavaScript</h1>
+<p class="intro">Índice vertical para localizar las áreas del HTML y las funciones del JavaScript. Las tarjetas describen el contenido existente; no reemplazan ni modifican los archivos funcionales.</p>
+<h2 class="group-title">HTML · HTML/index.html y HTML/modulos/</h2>
+<div class="cards">
+<article class="card"><h3><span class="tag">HTML principal</span>Aplicación completa</h3><span class="path">HTML/index.html · window.GESTOR_INITIAL</span><p>Incluye acceso, navegación, movimientos, metas, presupuestos, reportes, alertas y las demás vistas activas.</p></article>
+<article class="card"><h3><span class="tag">HTML 01–10</span>Fragmentos de referencia</h3><span class="path">HTML/modulos/</span><p>Extractos separados por área para facilitar la lectura. La aplicación carga las vistas desde HTML/index.html.</p></article>
+<article class="card"><h3><span class="tag">HTML docs</span>Índices del proyecto</h3><span class="path">HTML/documentacion/</span><p>Índices visuales de los módulos HTML, JavaScript y CSS.</p></article>
+</div>
+<h2 class="group-title">JavaScript · JS/ (13 módulos activos, en orden de carga)</h2>
+<div class="cards">
+<article class="card"><h3><span class="tag">JS 01</span>Estado y almacenamiento</h3><span class="path">JS/01_base_estado_almacenamiento.js</span><p>Utilidades base, estado de la aplicación y persistencia local.</p></article>
+<article class="card"><h3><span class="tag">JS 02</span>Cálculos y reportes</h3><span class="path">JS/02_calculos_reportes.js</span><p>Cálculos generales y datos de los reportes.</p></article>
+<article class="card"><h3><span class="tag">JS 03</span>Conexión y datos</h3><span class="path">JS/03_api_conexion.js</span><p>Comunicación con la base SQLite y almacenamiento local.</p></article>
+<article class="card"><h3><span class="tag">JS 04</span>Notificaciones y utilidades</h3><span class="path">JS/04_notificaciones_utilidades.js</span><p>Mensajes, contadores, formato y utilidades de interfaz.</p></article>
+<article class="card"><h3><span class="tag">JS 05</span>Renderizado principal</h3><span class="path">JS/05_datos_y_render_principal.js</span><p>Recepción de datos y refresco de las vistas principales.</p></article>
+<article class="card"><h3><span class="tag">JS 06</span>Panel general</h3><span class="path">JS/06_panel_dashboard.js</span><p>Indicadores, gráficos, categorías y límites del panel principal.</p></article>
+<article class="card"><h3><span class="tag">JS 07</span>Movimientos recurrentes</h3><span class="path">JS/07_movimientos_recurrentes.js</span><p>Listado, programación, edición y registro de gastos recurrentes.</p></article>
+<article class="card"><h3><span class="tag">JS 08</span>Presupuesto, metas y límites</h3><span class="path">JS/08_presupuestos_metas_alertas.js</span><p>Presupuestos, aportes a metas, saldos pendientes y alertas.</p></article>
+<article class="card"><h3><span class="tag">JS 09</span>Hábitos y reportes</h3><span class="path">JS/09_habitos_y_reportes.js</span><p>Análisis de hábitos, gastos por período y comparativas.</p></article>
+<article class="card"><h3><span class="tag">JS 10</span>Navegación y respaldos</h3><span class="path">JS/10_navegacion_modales_respaldos.js</span><p>Navegación, ventanas, respaldos y funciones de presentación.</p></article>
+<article class="card"><h3><span class="tag">JS 11</span>Seguridad y autenticación</h3><span class="path">JS/11_eliminacion_y_autenticacion.js</span><p>Acceso, autenticación y operaciones de eliminación protegidas.</p></article>
+<article class="card"><h3><span class="tag">JS 12</span>Cierres y perfil</h3><span class="path">JS/12_cierre_perfil_temas.js</span><p>Cierres mensuales, perfil y selección de tema.</p></article>
+<article class="card"><h3><span class="tag">JS 13</span>Eventos de inicio</h3><span class="path">JS/13_inicializacion.js</span><p>Conecta los botones, formularios y acciones de la aplicación.</p></article>
+</div>
+<div class="note"><strong>Organización:</strong> HTML, JS y CSS se guardan en carpetas independientes. El punto de entrada es HTML/index.html y los archivos JavaScript se cargan en el orden numérico mostrado. Los fragmentos de HTML/modulos/ sirven como referencia y no alteran la ejecución.</div>
+</main>
+</body>
+</html>
